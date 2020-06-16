@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5b4691cdc29199d65b6ac0a2884b8b5a82263c5e
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: 85cf523e8cc733156c2365da114cc893b022e1e3
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566983"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801152"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>行動分析と異常検出を瞬時に取得する
 
@@ -47,7 +47,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 * 漏洩した資格情報: ユーザーの有効な資格情報が漏洩したときにトリガーされます。 詳細については、「 [Azure AD の漏洩した資格情報の検出](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk)」を参照してください。
 * リスクの高いサインイン: 複数の Azure AD Identity Protection サインイン検出を1つの検出に結合します。 詳細については、「 [Azure AD のサインインリスクの検出](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk)」を参照してください。
 
-これらのポリシーは [Cloud App Security ポリシー] ページに表示され、有効または無効にすることができますが、編集することはできません。
+これらのポリシーは、[Cloud App Security ポリシー] ページに表示され、有効または無効にすることができます。
 
 ## <a name="anomaly-detection-policies"></a>異常検出ポリシー
 
@@ -70,9 +70,12 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 ### <a name="malware-detection"></a>[マルウェア検出]
 
-* この検出では、Microsoft アプリのものであるか、サード パーティ製アプリのものであるかに関係なく、クラウド ストレージの悪意のあるファイルを識別します。 Microsoft Cloud App Security では Microsoft の脅威インテリジェンスを使用して、特定のファイルが既知のマルウェア攻撃に関連付けられており、悪意のある可能性があるかどうかを認識します。 この組み込みポリシーは既定では無効になっています。 すべてのファイルがスキャンされるわけではありませんが、ヒューリスティックを使用して、潜在的に危険なファイルが検索されます。 ファイルが検出されたら、**[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
+* この検出では、Microsoft アプリのものであるか、サード パーティ製アプリのものであるかに関係なく、クラウド ストレージの悪意のあるファイルを識別します。 Microsoft Cloud App Security では Microsoft の脅威インテリジェンスを使用して、特定のファイルが既知のマルウェア攻撃に関連付けられており、悪意のある可能性があるかどうかを認識します。 この組み込みポリシーは既定では無効になっています。 すべてのファイルがスキャンされるわけではありませんが、ヒューリスティックを使用して、潜在的に危険なファイルが検索されます。 ファイルが検出されたら、**[感染したファイル]** のリストを表示することができます。 ファイルドロワーでマルウェアのファイル名をクリックして、マルウェアレポートを開きます。このレポートには、ファイルが感染しているマルウェアの種類に関する情報が表示されます。
+
+    この検出は、セッションポリシーを使用してリアルタイムで使用し、ファイルのアップロードとダウンロードを制御できます。
 
     > [!NOTE]
+    >
     > * Office 365 のマルウェア検出の場合は、Office 365 Advanced Threat Protection P1 の有効なライセンスが必要です。
     > * Cloud App Security は、次のアプリのマルウェア検出をサポートしています。
     >   * ボックス
@@ -202,7 +205,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 1. マルウェアに感染したファイルの場合、ファイルの検出後に、**[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)

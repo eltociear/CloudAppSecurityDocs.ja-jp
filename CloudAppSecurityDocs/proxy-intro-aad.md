@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 75a9c50b91b0aca0183af548bee6d6265be59e96
-ms.sourcegitcommit: b00cf17cc91d7a08cae5a602a6db05269643aa95
+ms.openlocfilehash: 84d78ef48ed141c62934b8b91137d601c1fff666
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415697"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800837"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
@@ -39,9 +39,11 @@ ms.locfileid: "84415697"
 
 - **データを禁止**する: 管理されていないデバイスなど、機密性の高いドキュメントのダウンロード、切り取り、コピー、および印刷をブロックできます。
 
-- **ダウンロード時の保護**: 機密性の高いドキュメントのダウンロードをブロックするのではなく、ドキュメントにラベルを付けて Azure Information Protection で保護するように要求できます。 このアクションにより、危険な可能性があるセッションで確実にドキュメントが保護され、ユーザー アクセスが制限されます。
+- **ダウンロード時の保護**: 機密性の高いドキュメントのダウンロードをブロックするのではなく、ドキュメントにラベルを付けて Azure Information Protection で保護するように要求できます。 このアクションにより、危険を及ぼす可能性のあるセッションにおいて確実にドキュメントが保護され、ユーザー アクセスが制限されます。
 
 - ラベルが付けられてい**ないファイルのアップロードを禁止**する: 機密性の高いファイルがアップロード、配布、および使用される前に、ファイルに適切なラベルと保護が設定されていることを確認することが重要です。 ラベル付けされておらず機密性の高いコンテンツが含まれるファイルは、ユーザーがコンテンツを分類するまでアップロードがブロックされるようにできます。
+
+- **潜在的なマルウェアをブロック**する: 悪意のある可能性のあるファイルのアップロードをブロックすることで、環境をマルウェアから保護できます。 アップロードまたはダウンロードされたファイルは、Microsoft の脅威インテリジェンスに対してスキャンし、すぐにブロックすることができます。
 
 - **コンプライアンス対応のためにユーザーセッションを監視**する: 危険なユーザーがアプリにサインインすると、そのアクションがセッション内からログに記録されます。 ユーザーの行動を調査して分析すると、将来どこで、どのような条件のもとでセッション ポリシーを適用する必要があるかを理解できます。
 
@@ -176,7 +178,7 @@ Office 365 Cloud App Security でサポートされているおすすめアプ�
 
 おすすめのアプリに関心がある場合は、[アプリに関する詳細情報をお送り](mailto:casfeedback@microsoft.com)ください。 オンボードに興味のあるユースケースを必ず送信してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [おすすめアプリへの Conditional Access App Control の展開](proxy-deployment-aad.md)

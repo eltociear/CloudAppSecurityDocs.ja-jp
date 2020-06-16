@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 75ee564e0001b76ea38f345cec24c02d567ed200
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 353cff79b3e76c3f63380194ea055a92f13c0ce8
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477482"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800777"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft データ分類サービスの統合
 
@@ -34,7 +34,7 @@ Microsoft Cloud App Security では、Microsoft データ分類サービスを�
 
 追加構成なしで、**Microsoft データ分類サービス**を使用するように**検査方法**を設定するためのオプションがあります。 このオプションは、Microsoft Cloud App Security のファイルに対するデータ漏えい保護のポリシーを作成するときに便利です。
 
-1. [ファイル ポリシー](data-protection-policies.md) ページの **[検査方法]** で、**[データ分類サービス]** を選択します。 また、[[セッションポリシー](session-policy-aad.md) ] ページで [**コントロールファイルのダウンロード (DLP 付き)** ] を選択して、**検査方法**を設定することもできます。
+1. [ファイル ポリシー](data-protection-policies.md) ページの **[検査方法]** で、**[データ分類サービス]** を選択します。 [[セッションポリシー](session-policy-aad.md) ] ページで [検査**方法**] を設定することもできます。これを行うには、[**コントロールファイルのダウンロード (検査付き)** ] を選択します。
 
     ![データ分類サービスの設定](media/dcs-enable.png)
 2. ポリシーを適用するタイミングについて、条件が **1 つ以上**満たされた場合、または**すべて**満たされた場合のいずれかを選択します。
@@ -55,6 +55,6 @@ Microsoft Cloud App Security では、Microsoft データ分類サービスを�
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [ポリシーを使用してクラウドアプリを制御する](control-cloud-apps-with-policies.md)
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

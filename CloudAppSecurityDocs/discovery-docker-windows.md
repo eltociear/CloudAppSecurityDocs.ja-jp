@@ -13,20 +13,20 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e8a5863b0643ed99f5bd28f04b0634dc822602c7
-ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
+ms.openlocfilehash: 99cdf5ec406287dd1458b75c8d5d76c2f027918b
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84274633"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801186"
 ---
-# <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
+# <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows 上の Docker
 
 *適用対象:Microsoft Cloud App Security*
 
 Windows で Docker を使用して Cloud App Security の継続的レポート用に自動ログ アップロードを構成することができます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 * OS:
     * **Windows 10** (作成者の更新プログラム)
@@ -44,7 +44,9 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 * Hyper-V でオペレーティング システム上の仮想化を有効にすることが必要
 
 > [!IMPORTANT]
-> ログを収集するには、ユーザーが Docker 用にサインインしている必要があります。 サインインしなくても、接続を切断するように Docker ユーザーに通知することをお勧めします。
+>
+> * ログを収集するには、ユーザーが Docker 用にサインインしている必要があります。 サインインしなくても、接続を切断するように Docker ユーザーに通知することをお勧めします。
+> * Docker for Windows は、入れ子になった仮想化のシナリオでは公式にサポートされていません。 入れ子になった仮想化の使用を計画している場合は、 [Docker の公式ガイド](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios)を参照してください。
 
 > [!NOTE]
 > 既存のログコレクターがあり、それを再度配置する前に削除する場合、または単に削除する場合は、次のコマンドを実行します。
