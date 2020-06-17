@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 99cdf5ec406287dd1458b75c8d5d76c2f027918b
-ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
+ms.openlocfilehash: ce6525373c8cb9be6a1e70085f5f3bda3dbd11fa
+ms.sourcegitcommit: 1f8f19312ce70e62b6aa0b94db06af07f881fefa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/16/2020
-ms.locfileid: "84801186"
+ms.locfileid: "84811270"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows 上の Docker
 
@@ -29,9 +29,9 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 ## <a name="prerequisites"></a>前提条件
 
 * OS:
-    * **Windows 10** (作成者の更新プログラム)
-    * Windows Server**バージョン1709以降**(SAC)
-    * **Windows Server 2019 (LTSC)**
+  * **Windows 10** (作成者の更新プログラム)
+  * Windows Server**バージョン1709以降**(SAC)
+  * **Windows Server 2019 (LTSC)**
 
 * ディスク領域: 250 GB
 
@@ -46,6 +46,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 > [!IMPORTANT]
 >
 > * ログを収集するには、ユーザーが Docker 用にサインインしている必要があります。 サインインしなくても、接続を切断するように Docker ユーザーに通知することをお勧めします。
+> * Docker for Windows は、VMWare 仮想化シナリオでは公式にサポートされていません。
 > * Docker for Windows は、入れ子になった仮想化のシナリオでは公式にサポートされていません。 入れ子になった仮想化の使用を計画している場合は、 [Docker の公式ガイド](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios)を参照してください。
 
 > [!NOTE]
