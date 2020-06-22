@@ -268,7 +268,7 @@
               href: api-tokens.md
             - name: API を使用したアクティビティの調査
               href: investigate-activities-api.md
-            - name: Microsoft Flow を使用する
+            - name: Microsoft Power Automate を使用する
               href: flow-integration.md
 - name: 参照先
   items:
