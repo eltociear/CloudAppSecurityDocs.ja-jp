@@ -15,22 +15,22 @@ ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 97e15ea3a12588bf6b6af7f06381f868c9c15a8e
-ms.sourcegitcommit: 796a99e91a8681a60b4449a474bb80089dd3df0d
+ms.openlocfilehash: 3941ea5141049f23ed8a187df5c29192883203c8
+ms.sourcegitcommit: 0e8065703810347c86567d636293bf6d41df1a84
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327834"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85256111"
 ---
-# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>GitHub Enterprise Cloud を Microsoft Cloud App Security に接続する
+# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security-preview"></a>GitHub Enterprise Cloud を Microsoft Cloud App Security に接続する (プレビュー)
 
 *適用対象:Microsoft Cloud App Security*
 
 GitHub Enterprise Cloud API コネクタは、現在プライベートプレビュー段階にあり、徐々にロールアウトされています。このプレビューバージョンは、サービスレベルアグリーメントなしで提供されており、運用環境のワークロードにはお勧めできません。 特定の機能はサポート対象ではなく、機能が制限されることがあります。 詳しくは、[Microsoft Azure プレビューの追加使用条件](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)に関するページをご覧ください。
 
-この記事では、アプリコネクタ Api を使用して Microsoft Cloud App Security を既存の GitHub エンタープライズクラウド組織に接続する手順について説明します。 この接続により、組織の GitHub エンタープライズクラウドの使用状況を可視化し、制御することができます。<!-- For more information about how Cloud App Security protects GitHub Enterprise Cloud, see **//TODO:: ???**.-->
+この記事では、アプリコネクタ Api を使用して Microsoft Cloud App Security を既存の GitHub エンタープライズクラウド組織に接続する手順について説明します。 この接続により、組織の GitHub エンタープライズクラウドの使用状況を可視化し、制御することができます。 Cloud App Security が GitHub Enterprise Cloud を保護する方法の詳細については、「 [Protect Github enterprise](protect-github.md)」を参照してください。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
 
 - 組織は、GitHub Enterprise Cloud ライセンスを持っている必要があります。
 - Cloud App Security に接続するために使用する GitHub アカウントには、組織に対する*所有者*のアクセス許可が必要です。
@@ -60,7 +60,7 @@ GitHub で組織のページを参照し、URL から組織のログイン名を
 
     ![組織のログイン名を取得していることを示すスクリーンショット](media/connect-github-org-login-name.png)
 
-1. **組織内に OAuth アプリを作成します。**  
+1. **GitHub 組織に接続するための Cloud App Security 用の OAuth アプリを作成します。**  
 接続されている追加の組織ごとに、この手順を繰り返します。
 
     1. [**設定**] [  >  **開発者の設定**] を参照して [ **OAuth アプリ**] を選択し、[**アプリケーションの登録**] をクリックします。 または、既存の OAuth アプリがある場合は、[**新しい Oauth アプリ**] をクリックします。
