@@ -4,19 +4,19 @@ description: このクイックスタートでは、クラウド アプリの使
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/23/2019
+ms.date: 06/07/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b9f026c9509153cca5c51024616662983550ef7
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 0ba3ba9d063e35c0dc95def25c2c69d351e24f22
+ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74720676"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84611207"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>クイック スタート:Microsoft Cloud App Security を使ってみる
 
@@ -27,7 +27,7 @@ ms.locfileid: "74720676"
 Cloud App Security を使用するには、組織がライセンスを持っている必要があります。 価格詳細については、[Cloud App Security ライセンス データシート](https://aka.ms/mcaslicensing)を参照してください。
 
 >[!NOTE]
->Cloud App Security を使用するのに Office 365 ライセンスは必要ありません。
+>Cloud App Security では、Office 365 のライセンスは必要ありません。
 
 ## <a name="prerequisites"></a>[前提条件]
 
@@ -42,9 +42,9 @@ Cloud App Security を使用するには、組織がライセンスを持って�
 
 ## <a name="to-access-the-portal"></a>ポータルにアクセスするには
 
-Cloud App Security ポータルにアクセスするには、[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) にアクセスします。 次のように、**Microsoft 365 管理センター**を使ってポータルにアクセスすることもできます。
+Cloud App Security ポータルにアクセスするには、[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) にアクセスします。 ポータルには、次のように **[Microsoft 365 管理センター](https://security.microsoft.com)** からアクセスすることもできます。
 
-1. Microsoft 365 管理センターで、**アプリ起動ツール** アイコン ![Office 365 アプリ起動ツール アイコン](media/o365-admin-centers-icon.png) をクリックしてから、 **[セキュリティ]** を選択します。
+1. Microsoft 365 管理センターのサイド メニューで、 **[すべてを表示]** をクリックし、 **[セキュリティ]** を選択します。
 
     ![Office 365 からのアクセス](media/access-from-o365.png)
 
@@ -129,7 +129,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 ### <a name="why-personalize-your-environment"></a>環境のカスタマイズが必要な理由
 
 一部の機能は、ニーズに合わせてカスタマイズされている場合に最適に動作します。
-独自のメール テンプレートを使用して、ユーザーにより良いエクスペリエンスを提供します。 受信する通知を決定し、組織の設定に合わせてリスク スコア メトリックをカスタマイズします。
+独自のメール テンプレートを使用して、ユーザーにより良いエクスペリエンスを提供します。 受信する通知を決定し、ご自分の組織の設定に合わせてご自分のリスク スコア メトリックをカスタマイズします。
 
 ## <a name="step-5-organize-the-data-according-to-your-needs"></a>手順 5. [ニーズに応じたデータの編成](ip-tags.md)
 

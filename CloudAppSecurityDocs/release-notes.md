@@ -4,19 +4,19 @@ description: この記事は、Cloud App Security の最新リリースの新機
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/17/2020
+ms.date: 06/16/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09c2f8ca89a53372f9d40190c430fd4be1615612
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 2ec05e43341dbabb6c01219c150599d2245840b9
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250708"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800862"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -25,6 +25,35 @@ ms.locfileid: "84250708"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード:ご自身のフィード リーダーに次の URL をコピーして貼り付けることで、このページの更新時に通知を受け取ることができます。`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-177"></a>Cloud App Security リリース 177
+
+リリース日: 2020 年 6 月 14 日
+
+- **新しいリアルタイム マルウェア検出 (プレビュー、段階的なロールアウト)**  
+ファイルのアップロードまたはダウンロード時に Microsoft 脅威インテリジェンスを使用して潜在的なマルウェアを検出するように、セッション制御を拡張しました。 新しい検出をすぐに使用できるようになりました。これは潜在的なマルウェアとして識別されたファイルを自動的にブロックするように構成できます。 詳細については、「[アップロード時にマルウェアをブロックする](session-policy-aad.md#block-malware-on-upload)」を参照してください。
+
+- **アクセスとセッションの制御のための新しいアクセス トークンのサポート**  
+アクセスとセッションの制御に対してアプリをオンボードするときに、アクセス トークンとコードの要求をログインとして扱う機能を追加しました。 トークンを使用するには、設定の歯車アイコンをクリックし、 **[アプリの条件付きアクセス制御]** を選択して、関連するアプリを編集し (3 つの点のメニュー > **[アプリの編集]** )、 **[Treat access token and code requests as app logins]\(アクセス トークンとコードの要求をアプリのログインとして扱う\)** を選択して、 **[保存]** をクリックします。 アプリのオンボードの詳細については、[アプリのオンボードとデプロイ](proxy-deployment-any-app.md)に関するページと[おすすめアプリのデプロイ](proxy-deployment-aad.md)に関するページを参照してください。
+
+<!--
+- **New OAuth app policy templates**  
+Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
+
+  - **OAuth apps authorized by external users**: Alert when an app was authorized by an external user.
+  - **OAuth apps with high permissions and rare community use – Google**: Alert for apps with high permissions and rare community use in Google.
+  - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
+  - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
+-->
+
+- **セッション制御の拡張プロキシ URL サフィックス (段階的なロールアウト)**  
+2020 年 6 月 7 日に、名前付きリージョンを含まない 1 つの統合サフィックスを使用する、拡張プロキシ セッション制御の段階的なロールアウトを開始しました。 たとえば、ユーザーには `<AppName>.<Region>.cas.ms` の代わりに `<AppName>.mcas.ms` サフィックスが表示されます。 ネットワーク アプライアンスまたはゲートウェイのドメインを定期的にブラックリストに登録する場合は、「[アクセス制御とセッション制御](network-requirements.md#access-and-session-controls)」に一覧表示されているすべてのドメインをホワイトリストに登録してください。
+
+- **新しいドキュメント**  
+Cloud App Security ドキュメントは、次の新しいコンテンツを含むように拡張されています。
+
+  - **[Cloud App Security の REST API を使用する](api-introduction.md)** : API の機能について学習し、アプリケーションと Cloud App Security の統合を開始します。
+  - **[異常検出アラートの調査](investigate-anomaly-alerts.md)** : 利用可能な UEBA アラート、それらの意味について理解し、発生するリスクを特定して、侵害の範囲、状況を修復するための措置を把握します。
 
 ## <a name="cloud-app-security-release-176"></a>Cloud App Security リリース 176
 
@@ -39,7 +68,7 @@ Azure AD とのネイティブ統合を活用することで、クラウド ア�
 - **選択したポリシーで新しいフィードバック オプションが利用可能に**  
 私たちは、皆様からフィードバックをお寄せいただき、どのように皆様を支援できるか把握したいと考えています。 そこで、ファイル、異常検出、またはセッション ポリシーを作成、変更、または削除するときに、新しいフィードバック ダイアログを利用して Cloud App Security の改善にご協力いただけるようになりました。
 
-- **セッション制御の拡張サフィックス プロキシ (段階的なロールアウト)**  
+- **セッション制御の拡張プロキシ URL サフィックス (段階的なロールアウト)**  
 2020 年 6 月 7 日から、名前付きリージョンを含まない 1 つの統合サフィックスを使用する、拡張プロキシ セッション制御が段階的にロールアウトされます。 たとえば、ユーザーには `<AppName>.<Region>.cas.ms` の代わりに `<AppName>.mcas.ms` サフィックスが表示されます。 ネットワーク アプライアンスまたはゲートウェイのドメインを定期的にブラックリストに登録する場合は、「[アクセス制御とセッション制御](network-requirements.md#access-and-session-controls)」に一覧表示されているすべてのドメインをホワイトリストに登録してください。
 
 - **セッション制御のパフォーマンスの向上 (段階的なロールアウト)**  
@@ -201,7 +230,7 @@ Cloud App Security の Cloud Discovery では、さまざまなトラフィッ�
 
 - **新しい検出**  
 
-  - **疑わしい AWS ログ サービスの変更 (プレビュー)** :CloudTrail ログ サービスに対してユーザーが変更を加えたときに、アラートを生成します。 たとえば、攻撃者は、その攻撃の痕跡を隠すために、CloudTrail の監査を無効にすることがよくあります。
+  - **疑わしい AWS ログ サービスの変更 (プレビュー)** : CloudTrail ログ サービスに対してユーザーが変更を加えたときに、アラートを生成します。 たとえば、攻撃者は、その攻撃の痕跡を隠すために、CloudTrail の監査を無効にすることがよくあります。
 
   - **複数の VM 作成アクティビティ**:ユーザーが、学習済みのベースラインと比較して異常な数の VM 作成アクティビティを実行した場合にアラートが生成されます。 AWS に適用されるようになりました。
 
@@ -323,7 +352,7 @@ Cloud App Security では、接続されているアプリのファイルから 
 
 リリース日: 2019 年 6 月 23 日
 
-- **アプリの条件付きアクセス制御がすべてのアプリに展開 (プレビュー)**  
+- **すべてのアプリでのアプリの条件付きアクセス制御の展開 (プレビュー)**  
 これまでも[主要なアプリケーション](proxy-intro-aad.md)に対して充実したサポートを提供してきましたが、このたび、ついにアプリの条件付きアクセス制御のサポートがすべての Web アプリに展開されることになりました。 この新機能により、セッションやアクセス ポリシーを処理する Web アプリを展開して強力なリアルタイムの監視と制御ができるようになります。 たとえば、ダウンロードを Azure Information Protection ラベルで保護したり、機密文書のアップロードをブロックしたり、監査を提供したりできます。
 - **ポータルのアクティビティの監査**  
 Cloud App Security は実行されたアクティビティの包括的な監視と調査を行うために、ポータル内のすべての管理アクティビティの監査を行います。 さらに、特定のユーザーを調査したり、特定のアラートを確認したりする管理者の監査のような追加の調査と分析のために、最大で 90 日間のアクティビティをエクスポートできるようになりました。 ログをエクスポートするには、 **[管理者のアクセス権管理]** 設定ページに移動してください。

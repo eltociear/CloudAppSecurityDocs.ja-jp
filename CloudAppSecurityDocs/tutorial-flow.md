@@ -1,21 +1,21 @@
 ---
 title: エンドポイントの修復までガバナンスを拡張する | Microsoft Docs
-description: このチュートリアルでは、Microsoft Flow をトリガーして Microsoft Defender Advanced Threat Protection 修復アクションを実行するために、Microsoft Cloud App Security ポリシー アラートを構成する手順について説明します。
+description: このチュートリアルでは、Microsoft Power Automate ワークフローをトリガーして Microsoft Defender Advanced Threat Protection 修復アクションを実行するために、Microsoft Cloud App Security ポリシー アラートを構成するプロセスについて説明します。
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
-ms.date: 9/8/2019
-ms.openlocfilehash: 06fe00d3a289aa32846be71509707aa384b2177f
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.date: 04/27/2020
+ms.openlocfilehash: 689b40482c4064add4edc4a05d2dbcd768ccf53c
+ms.sourcegitcommit: 4e2b905c8770d411df68372c29154d30b2cf195e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74720540"
+ms.lasthandoff: 06/21/2020
+ms.locfileid: "85123362"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>チュートリアル:エンドポイントの修復までガバナンスを拡張する
 
-Cloud App Security には、ユーザーを停止したり、ファイルを非公開にするなどの定義済みのポリシーのガバナンス オプションがあります。 ネイティブに統合されている Microsoft Flow を使用すると、サービスとしてのソフトウェア (SaaS) コネクタの大規模なエコシステムを使用して、修復などのプロセスを自動化するワークフローを構築できます。
+Cloud App Security には、ユーザーを停止したり、ファイルを非公開にするなどの定義済みのポリシーのガバナンス オプションがあります。 Microsoft Power Automate とのネイティブ統合を使用すると、サービスとしてのソフトウェア (SaaS) コネクタの大規模なエコシステムを使用して、修復などのプロセスを自動化するワークフローを構築できます。
 
 たとえば、危険なマルウェアである可能性の兆候が検出された場合、ワークフローを使用して、ウイルス対策スキャンの実行やエンドポイントの分離などの Microsoft Defender Advanced Threat Protection (ATP) 修復アクションを開始できます。
 
@@ -31,18 +31,18 @@ Cloud App Security には、ユーザーを停止したり、ファイルを非�
 > [!NOTE]
 > これらのワークフローは、ユーザー アクティビティを含むポリシーにのみ該当します。 たとえば、Discovery や OAuth のポリシーではこれらのワークフローは使用できません。
 
-Microsoft Flow プランがない場合は、[無料試用版アカウントにサインアップ](https://flow.microsoft.com/pricing)します。
+Power Automate プランがない場合は、[無料試用版アカウントにサインアップ](https://flow.microsoft.com/pricing)します。
 
 ## <a name="prerequisites"></a>[前提条件]
 
-* 有効な [Microsoft Flow プランが必要](https://flow.microsoft.com/pricing)
+* 有効な [Microsoft Power Automate プランが必要](https://flow.microsoft.com/pricing)
 * 有効な Microsoft Defender ATP プランが必要
-* Microsoft Flow 環境が Azure AD と同期され、Defender ATP の監視対象で、ドメイン参加済みである
+* Power Automate 環境が Azure AD と同期され、Defender ATP の監視対象で、ドメイン参加済みである
 
 ## <a name="phase-1-generate-a-cloud-app-security-api-token"></a>フェーズ 1:Cloud App Security の API トークンを生成する<a name="generate-token"></a>
 
 > [!NOTE]
-> Cloud App Security コネクタを使用してフローを作成済みである場合は、Microsoft Flow がトークンを自動的に再利用するため、この手順を省略できます。
+> Cloud App Security コネクタを使用してワークフローを以前に作成している場合は、Power Automate によってトークンが自動的に再利用されるため、この手順を省略できます。
 
 1. Cloud App Security のメニュー バーで設定の歯車 ![設定アイコン](media/settings-icon.png "設定アイコン") をクリックし、 **[セキュリティ拡張機能]** を選択します。
 
@@ -57,34 +57,34 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 ## <a name="phase-2-create-a-flow-to-run-an-antivirus-scan"></a>フェーズ 2:ウイルス対策スキャンを実行するフローを作成する<a name="create-flow"></a>
 
 > [!NOTE]
-> Defender ATP コネクタを使用してフローを作成したことがある場合は、Flow によってコネクタが自動的に再利用されるため、**サインイン**の手順を省略できます。
+> Defender ATP コネクタを使用してフローを以前に作成している場合は、Power Automate によってコネクタが自動的に再利用されるため、**サインイン**の手順を省略できます。
 
-1. [Microsoft Flow ポータル](https://flow.microsoft.com/)にアクセスし、[テンプレート] を選択してください。
+1. [Power Automate ポータル](https://flow.microsoft.com/)に移動し、 **[テンプレート]** を選択してください。
 
-    ![[テンプレート] が選択されている Microsoft Flow のメイン ページのスクリーンショット。](media/tutorial-flow-templates.png)
+    ![テンプレートの選択を示す Power Automate のメイン ページのスクリーンショット。](media/tutorial-flow-templates.png)
 
 1. "Cloud App Security" を検索し、 **[Run antivirus scan using Windows Defender upon a Cloud App Security alert]\(Cloud App Security アラート時に Windows Defender を使用してウイルス対策スキャンを実行する\)** を選択します。
 
-    ![検索結果を示す Microsoft Flow のテンプレート ページのスクリーンショット。](media/tutorial-flow-templates-search.png)
+    ![検索結果を示す Power Automate のテンプレート ページのスクリーンショット。](media/tutorial-flow-templates-search.png)
 
-1. **[サインイン]** をクリックして Microsoft Defender ATP コネクタで使用する管理者の資格情報を入力します。
+1. アプリの一覧で、**Microsoft Defender ATP コネクタ**が表示されている行で、 **[サインイン]** をクリックします。
 
-    ![サインイン手順を示す Microsoft Flow のテンプレート ページのスクリーンショット。](media/tutorial-flow-templates-signin.png)
+    ![サインイン プロセスを示す Power Automate のテンプレート ページのスクリーンショット。](media/tutorial-flow-templates-signin.png)
 
 ## <a name="phase-3-configure-the-flow"></a>フェーズ 3:フローを構成する<a name="configure-flow"></a>
 
 > [!NOTE]
-> Azure AD コネクタを使用してフローを作成済みである場合は、Microsoft Flow がトークンを自動的に再利用するため、この手順を省略できます。
+> Azure AD コネクタを使用してフローを以前に作成している場合は、Power Automate によってトークンが自動的に再利用されるため、この手順を省略できます。
 
-1. **[作成]** をクリックします。
+1. アプリの一覧で、 **[Cloud App Security]** が表示されている行で、 **[作成]** をクリックします。
 
-    ![Cloud App Security の [作成] ボタンを示す Microsoft Flow のテンプレート ページのスクリーンショット。](media/tutorial-flow-templates-create.png)
+    ![Cloud App Security の作成ボタンを示す Power Automate のテンプレート ページのスクリーンショット。](media/tutorial-flow-templates-create.png)
 
 1. **Cloud App Security** のポップアップ ウィンドウで、接続名 (たとえば "Cloud App Security トークン") を入力し、コピーした API トークンを貼り付けて、 **[作成]** をクリックします。
 
     ![名前とキーが入力された、[作成] ボタンがある [Cloud App Security] ウィンドウのスクリーンショット。](media/tutorial-flow-templates-create-window.png)
 
-1. アプリの一覧で **[Azure AD を使用する HTTP]** が表示される行の末尾の 3 つのドットを選択し、 **[新しい接続の追加]** をクリックします。
+1. アプリの一覧で、 **[Azure AD を使用する HTTP]** が表示されている行で、 **[サインイン]** をクリックします。
 
 1. **[Azure AD を使用する HTTP]** のポップアップ ウィンドウで **[基本リソース URL]** と **[Azure AD リソース URI]** の両方のフィールドに「`https://graph.microsoft.com`」を入力し、 **[サインイン]** をクリックして、Azure AD コネクタを使用した HTTP で使用する管理者の資格情報を入力します。
 
@@ -92,7 +92,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
 1. **[続行]** をクリックします。
 
-    ![完了したアクションと [続行] ボタンがある、Microsoft Flow のテンプレート ウィンドウのスクリーンショット。](media/tutorial-flow-templates-continue.png)
+    ![完了したアクションと [続行] ボタンを示す、Power Automate のテンプレート ウィンドウのスクリーンショット。](media/tutorial-flow-templates-continue.png)
 
 1. すべてのコネクタが正常に接続されたら、フローのページの **[Apply to each machine]\(各マシンに適用\)** で、必要に応じてコメントとスキャンの種類を変更し、 **[保存]** をクリックします。
 
@@ -110,9 +110,9 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
 これで、このポリシーに対して生成されたすべてのアラートで、ウイルス対策スキャンを実行するフローが開始されます。
 
-このチュートリアルの手順を使用すると、Cloud App Security の修復機能を拡張するさまざまなワークフローを使用したアクションを作成できます。これには、その他の Defender ATP アクションも含まれます。 Microsoft Flow に定義済みの Cloud App Security ワークフローの一覧を表示するには、[「Cloud App Security」を検索](https://go.microsoft.com/fwlink/?linkid=2102574)してください。
+このチュートリアルの手順を使用すると、Cloud App Security の修復機能を拡張するさまざまなワークフローを使用したアクションを作成できます。これには、その他の Defender ATP アクションも含まれます。 Power Automate に定義済みの Cloud App Security ワークフローの一覧を表示するには、["Cloud App Security" を検索](https://go.microsoft.com/fwlink/?linkid=2102574)してください。
 
 ## <a name="see-also"></a>関連項目
 
 > [!div class="nextstepaction"]
-> [カスタム アラート オートメーションのための Microsoft Flow との統合](flow-integration.md)
+> [カスタム アラートの自動化のための Power Automate との統合](flow-integration.md)
