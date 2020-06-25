@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 06/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 353cff79b3e76c3f63380194ea055a92f13c0ce8
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 120c34fda9080a921b7a2a4cbcdb0563dd5b0777
+ms.sourcegitcommit: 33e4a3eae5852fb24531aee9e880a4c0c0520820
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800777"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85311883"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft データ分類サービスの統合
 
@@ -44,7 +44,7 @@ Microsoft Cloud App Security では、Microsoft データ分類サービスを�
 
 4. [既定の機密情報の種類](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)を使用して、Microsoft Cloud App Security で保護されているファイルに対する操作を定義することができます。 [Office 365 のカスタムの機密情報の種類](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30)のいずれかを再利用することもできます。
     > [!NOTE]
-    > 指紋や正確なデータ照合などの高度な分類の種類を使用するようにポリシーを構成することができます。
+    > [指紋](/microsoft-365/compliance/document-fingerprinting?view=o365-worldwide)、[正確なデータ一致](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)、[トレーニング可能な分類子](/microsoft-365/compliance/classifier-getting-started-with)などの高度な分類の種類を使用するようにポリシーを構成することができます。
 
 5. 必要に応じて、一致の最後の 4 文字のマスクを解除できます。 既定では、マスクされた一致がコンテキストの中で示され、一致の前後の 40 文字が含まれます。 このチェック ボックスをオンにした場合、一致自体の最後の 4 文字のマスクが解除されます。
 
@@ -52,7 +52,7 @@ Microsoft Cloud App Security では、Microsoft データ分類サービスを�
 
 これらのポリシーを設定すると、その他の承認されたクラウド アプリすべてに Office 365 DLP 機能の長所を簡単に拡張できます。また、Microsoft Cloud App Security によって提供されるツールセット (たとえば、[Azure Information Protection 分類ラベルを自動的に適用する](azip-integration.md)機能や、共有アクセス許可を制御する機能) をフルに使用して、アプリに格納されているデータを保護できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
