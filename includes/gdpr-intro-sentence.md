@@ -1,5 +1,5 @@
 ---
-title: インクルード ファイル
+title: ファイルを含める
 description: インクルード ファイル
 services: active-directory
 author: eross-msft
@@ -16,4 +16,4 @@ ms.lasthandoff: 04/21/2020
 ms.locfileid: "68912410"
 ---
 >[!Note] 
-> この記事は、デバイスまたはサービスから個人用データを削除する手順について説明しており、GDPR での義務を果たすために使用できます。 GDPR に関する一般的な情報をお探しの場合は、[Service Trust portal の GDPR に関するセクション](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)を参照してください。
+> この記事では、デバイスまたはサービスから個人データを削除する手順について説明します。また、これは GDPR での義務をサポートするために使用できます。 GDPR に関する一般情報については、[Service Trust Portal の GDPR セクション](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)をご覧ください。

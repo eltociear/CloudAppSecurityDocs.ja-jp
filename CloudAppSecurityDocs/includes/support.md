@@ -1,5 +1,5 @@
 ---
-title: インクルード ファイル
+title: ファイルを含める
 description: インクルード ファイル
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
