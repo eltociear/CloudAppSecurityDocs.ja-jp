@@ -270,6 +270,8 @@
               href: siem-sentinel.md
             - name: 外部 DLP 統合
               href: icap-stunnel.md
+            - name: 追加の統合
+              href: additional-integrations.md
         - name: プロセスとワークフローの自動化
           items:
             - name: REST API を使用する
