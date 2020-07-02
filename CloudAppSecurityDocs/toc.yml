@@ -67,6 +67,8 @@
           href: protect-box.md
         - name: DropBox を保護する
           href: protect-dropbox.md
+        - name: GitHub を保護する
+          href: protect-github.md
         - name: GCP を保護する
           href: protect-gcp.md
         - name: G Suite を保護する
@@ -155,6 +157,8 @@
           href: connect-box-to-microsoft-cloud-app-security.md
         - name: Dropbox の接続
           href: connect-dropbox-to-microsoft-cloud-app-security.md
+        - name: GitHub の接続
+          href: connect-github-ec-to-microsoft-cloud-app-security.md
         - name: G Suite の接続
           href: connect-google-apps-to-microsoft-cloud-app-security.md
         - name: GCP の接続
@@ -196,10 +200,14 @@
           href: manage-app-permissions.md
         - name: セキュリティの構成
           items:
-            - name: Azure のセキュリティ構成
+            - name: 概要
               href: security-config.md
+            - name: Azure のセキュリティ構成
+              href: security-config-azure.md
             - name: AWS のセキュリティ構成
               href: security-config-aws.md
+            - name: GCP のセキュリティ構成
+              href: security-config-gcp.md
         - name: アプリの監視
           href: monitor-alerts.md
           items:
