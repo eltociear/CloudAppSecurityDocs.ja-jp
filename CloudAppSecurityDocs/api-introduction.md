@@ -1,6 +1,6 @@
 ---
 title: Cloud App Security REST API
-description: この記事では、HTTPS 経由で Cloud App Security を操作する方法について説明します。
+description: この記事では、HTTPS を使用して Cloud App Security を操作する方法について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,7 +12,7 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.openlocfilehash: df70a9408b88692b9faf789a00b5f307c0af24ee
 ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/09/2020
 ms.locfileid: "84563901"
@@ -21,42 +21,42 @@ ms.locfileid: "84563901"
 
 *適用対象:Microsoft Cloud App Security*
 
-この記事では、HTTPS 経由で Cloud App Security を操作する方法について説明します。
+この記事では、HTTPS を使用して Cloud App Security を操作する方法について説明します。
 
-Microsoft Cloud App Security API を使うと、REST API エンドポイントからプログラムで Cloud App Security にアクセスできます。 アプリケーションで API を使うことにより、Cloud App Security のデータとオブジェクトに対して読み取りと更新の操作を実行できます。 たとえば、Cloud App Security API は、ユーザー オブジェクトに対する次の一般的な操作をサポートしています。
+Microsoft Cloud App Security API を使用すると、REST API エンドポイントを介して、プログラムで Cloud App Security にアクセスできます。 アプリケーションでは、API を使用して、Cloud App Security のデータとオブジェクトに対する読み取りと更新の操作を実行できます。 たとえば、Cloud App Security API では、ユーザー オブジェクトに対する次の一般的な操作がサポートされています。
 
-- Cloud Discovery のログ ファイルをアップロードします
-- ブロック スクリプトを生成します
-- アクティビティとアラートの一覧表示
-- アラートを無視または解決します
+- Cloud Discovery にログ ファイルをアップロードする
+- ブロック スクリプトを生成する
+- アクティビティとアラートの一覧を取得する
+- アラートを無視または解決する
 
 ## <a name="api-url-structure"></a>API URL 構造
 
-Cloud App Security API を使用するには、最初にテナントから API URL を取得する必要があります。 API URL は、の形式を使用し `https://<portal_url>/api/<endpoint>` ます。
+Cloud App Security API を使用するには、最初にテナントから API の URL を取得する必要があります。 API の URL では、次の形式が使用されます: `https://<portal_url>/api/<endpoint>`。
 
-テナントの Cloud App Security ポータルの URL を取得するには、次の手順を実行します。
+テナントに対する Cloud App Security ポータルの URL を取得するには、次の手順のようにします。
 
-1. Cloud App Security ポータルで、メニュー バーの**疑問符のアイコン**をクリックします。 次に、**[バージョン情報]** を選択します。
+1. Cloud App Security ポータルで、メニュー バーの**疑問符アイコン**をクリックします。 次に、 **[バージョン情報]** を選択します。
 
-    ![[バージョン情報] をクリックします。](media/about-menu.png)
+    ![[バージョン情報] をクリックする](media/about-menu.png)
 
-1. Cloud App Security の [バージョン情報] 画面に、ポータルの url が表示されます。
+1. Cloud App Security のバージョン情報画面で、ポータルの URL を確認できます。
 
     ![データ センターを表示する](media/api-url.png)
 
-ポータルの url を取得したら、 `/api` それにサフィックスを追加して API url を取得します。 たとえば、ポータルの URL がの場合、 `https://mytenant.us2.contoso.com` API url はに `https://mytenant.us2.contoso.com/api` なります。
+ポータルの URL がわかったら、それに `/api` サフィックスを追加して API の URL を取得します。 たとえば、ポータルの URL が `https://mytenant.us2.contoso.com` である場合、API の URL は `https://mytenant.us2.contoso.com/api` になります。
 
 ## <a name="api-tokens"></a>API トークン
 
-Cloud App Security には、次のように、サーバーへのすべての API 要求のヘッダーに API トークンが必要です。
+Cloud App Security では、サーバーへのすべての API 要求のヘッダーで、API トークンを指定する必要があります。次に例を示します。
 
 ```http
 Authorization: Token <your_token_key>
 ```
 
-ここ `<your_token_key>` で、は個人用 API トークンです。
+`<your_token_key>` は個人の API トークンです。
 
-API トークンの詳細については、「 [api トークンの管理](api-authentication.md)」を参照してください。
+API トークンの詳細については、「[API トークンの管理](api-authentication.md)」を参照してください。
 
 ### <a name="example"></a>例
 
@@ -66,54 +66,54 @@ curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_regi
 
 ## <a name="what-actions-are-supported"></a>サポートされているアクション
 
-次の表では、サポートされている操作について説明します。
+次の表では、サポートされているアクションについて説明します。
 
 |リソース|HTTP 動詞|URI ルート|
 |---|---|---|
-|探索|GET、POST、PUT|/api/v1/discovery/|
-|データ強化|POST|/サブネット/|
-|Activities|GET または POST|/api/v1/activities/|
-|警告|GET または POST|/api/v1/alerts/|
-|エンティティ|GET または POST|/api/v1/entities/|
-|Files|GET または POST|/api/v1/files/|
+|検出|GET、POST、PUT|/api/v1/discovery/|
+|データ エンリッチメント|POST|/api/subnet/|
+|アクティビティ|GET、POST|/api/v1/activities/|
+|アラート|GET、POST|/api/v1/alerts/|
+|エンティティ|GET、POST|/api/v1/entities/|
+|ファイル|GET、POST|/api/v1/files/|
 
-ここで、**リソース**は関連エンティティのグループを表します。
+「**リソース**」は、関連エンティティのグループを表します。
 
-## <a name="what-field-types-are-supported"></a>どのようなフィールドの種類がサポートされていますか。
+## <a name="what-field-types-are-supported"></a>サポートされているフィールドの型
 
-次の表では、サポートされているフィールドの種類について説明します。
+次の表では、サポートされているフィールドの型について説明します。
 
-|フィールド|説明|
+|フィールド|[説明]|
 |---|---|
 |string|テキスト文字列|
-|boolean|True/false を表すブール値|
-|整数 (integer)|32 ビット符号付き整数|
-|timestamp|エポックからのミリ秒|
+|boolean|true または false を表すブール値|
+|integer|32 ビット符号付き整数|
+|timestamp|エポックからのミリ秒数|
 
 ## <a name="limits"></a>制限
 
-要求に limit パラメーターを指定することで、要求の制限を選択できます。
+要求で limit パラメーターを指定することにより、要求を制限することができます。
 
-Limit パラメーターを指定するために、次のメソッドがサポートされています。
+サポートされている limit パラメーターの指定方法は次のとおりです。
 
-- URL エンコード (ヘッダー付き `Content-Type: application/x-www-form-urlencoded` )
-- フォームデータ
-- JSON 本文 ( `Content-Type: multipart/form-data` および適切な境界ヘッダーを含む)
+- URL エンコード (`Content-Type: application/x-www-form-urlencoded` ヘッダーで)
+- フォーム データ
+- JSON 本文 (`Content-Type: multipart/form-data` および適切な境界ヘッダーで)
 
 > [!NOTE]
 >
-> - 制限を指定しない場合、既定で100が設定されます。
-> - API トークンを使用して行われるすべての要求に対する応答は、最大100項目に制限されます。
+> - 制限を指定しない場合、既定で 100 に設定されます。
+> - その API トークンを使用して行われるすべての要求に対する応答は、最大 100 項目に制限されます。
 
-## <a name="filters"></a>フィルター
+## <a name="filters"></a>フィルタ
 
-多数の結果がある場合は、フィルターを使用して要求を微調整すると便利です。 ここでは、フィルターで使用できるの構造と、で使用できる演算子について説明します。
+多数の結果がある場合、フィルターを使用して要求を微調整すると便利です。 このセクションでは、フィルターの構造と、フィルターで使用できる演算子について説明します。
 
-### <a name="structure"></a>構造体
+### <a name="structure"></a>構造
 
-一部の API エンドポイントは、クエリの実行時にフィルターをサポートしています。 関連するセクションには、使用可能なすべてのフィルター選択可能なフィールドと、そのリソースでサポートされている演算子の一覧が記載されています。
+一部の API エンドポイントでは、クエリを実行するときにフィルターがサポートされています。 それらに関連するセクションには、使用可能なすべてのフィルター可能なフィールドと、そのリソースに対してサポートされている演算子の一覧が記載されています。
 
-ほとんどのフィルターでは、強力なクエリを提供するために複数の値がサポートされています。 フィルターと演算子を組み合わせる場合は、フィルター間の論理演算子としてとを使用します。
+ほとんどのフィルターでは、強力なクエリを提供するために複数の値がサポートされています。 フィルターと演算子を組み合わせるとき、フィルター間の論理演算子としては AND を使用します。
 
 ### <a name="example"></a>例
 
@@ -140,33 +140,33 @@ curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_regi
 
 次の表では、サポートされている演算子について説明します。
 
-| 演算子 | 応答の種類 | 説明 |
+| 演算子 | 応答の種類 | [説明] |
 | --- | --- | --- |
-| contains | 文字列の一覧 | 指定された文字列の1つを含むすべての関連レコードを返します。 |
-| deq | 値の一覧 | 指定された値と等しくない1つの値を含むすべてのレコードを返します |
-| descendantof | 値の一覧 | 値または子孫の子孫に一致するすべての関連レコードを返します |
-| notnotstartwith | 文字列の一覧 | 指定された各文字列で開始されていないすべての関連レコードを返します。 |
-| endswith | 文字列の一覧 | 指定されたいずれかの文字列で終わるすべての関連レコードを返します。 |
-| eq | 値の一覧 | 指定された値のいずれかを含むすべての関連レコードを返します。 |
-| gt | 単一の値 | 値が指定された値より大きいすべてのレコードを返します |
-| gte | 単一の値 | 指定された値以上の値を持つすべてのレコードを返します |
-| gte_ndays | number | N 日前よりも後の日付を持つすべてのレコードを返します |
-| isnotset | boolean | "True" に設定すると、指定したフィールドに値がない関連レコードがすべて返されます。 |
-| isset | boolean | "True" に設定すると、指定したフィールドに値を持つすべての関連レコードが返されます。 |
-| lt | 単一の値 | 値が指定された値より小さいすべてのレコードを返します |
-| lte | 単一の値 | 指定された値以下の値を持つすべてのレコードを返します |
-| lte_ndays | number | N 日前より前の日付を持つすべてのレコードを返します |
-| ncontains | 文字列の一覧 | 指定された文字列の1つを含まないすべての関連レコードを返します。 |
-| ndescendantof | 値の一覧 | 一致しない値または子孫の子孫ではないすべての関連レコードを返します |
-| neq | 値の一覧 | 指定されたすべての値を含まないすべての関連レコードを返します。 |
-| range | "開始" フィールドと "終了" フィールドを含むオブジェクトの一覧 | 指定されたいずれかの範囲内のすべてのレコードを返します |
-| startswith | 文字列の一覧 | 指定されたいずれかの文字列で始まるすべての関連レコードを返します。 |
-| startswithsingle | string | 指定された文字列で始まるすべての関連レコードを返します。 |
-| text | string | すべてのレコードのフルテキスト検索を実行します。 |
+| 次の値を含む | 文字列のリスト | 指定した文字列のいずれかが含まれる関連レコードがすべて返されます |
+| deq | 値のリスト | 指定した値のいずれとも等しくない値が含まれるレコードがすべて返されます |
+| descendantof | 値のリスト | 指定した値またはその子孫に一致する関連レコードがすべて返されます |
+| doesnotstartwith | 文字列のリスト | 指定した文字列のいずれでも始まっていない関連レコードがすべて返されます |
+| endswith | 文字列のリスト | 指定した文字列のいずれかで終わっている関連レコードがすべて返されます |
+| eq | 値のリスト | 指定した値のいずれかが含まれる関連レコードがすべて返されます |
+| gt | 単一の値 | 指定した値より大きい値が含まれるレコードがすべて返されます |
+| gte | 単一の値 | 指定した値と等しいか、それより大きい値が含まれるレコードがすべて返されます |
+| gte_ndays | 数値 | N 日前より後の日付を持つレコードがすべて返されます |
+| isnotset | boolean | "true" に設定すると、指定したフィールドに値が含まれない関連レコードがすべて返されます |
+| isset | boolean | "true" に設定すると、指定したフィールドに値が含まる関連レコードがすべて返されます |
+| lt | 単一の値 | 指定した値より小さい値が含まれるレコードがすべて返されます |
+| lte | 単一の値 | 指定した値と等しいか、それより小さい値が含まれるレコードがすべて返されます |
+| lte_ndays | 数値 | N 日前より前の日付を持つレコードがすべて返されます |
+| ncontains | 文字列のリスト | 指定したどの文字列も含まれない関連レコードがすべて返されます |
+| ndescendantof | 値のリスト | 指定した値またはその子孫に一致しない関連レコードがすべて返されます |
+| neq | 値のリスト | 指定したどの値も含まれない関連レコードがすべて返されます |
+| range | "開始" フィールドと "終了" フィールドが含まれるオブジェクトのリスト | 指定したいずれかの範囲内のレコードがすべて返されます |
+| startswith | 文字列のリスト | 指定した文字列のいずれかで始まっている関連レコードがすべて返されます |
+| startswithsingle | string | 指定した文字列で始まっている関連レコードがすべて返されます |
+| text | string | すべてのレコードのフルテキスト検索を実行します |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [API 認証](api-authentication.md)
+> [API の認証](api-authentication.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
