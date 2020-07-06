@@ -1,6 +1,6 @@
 ---
-title: Cloud App Security でユーザー データを匿名化する
-description: この記事では、Cloud Discovery データのユーザー名を匿名化し、ユーザーのプライバシーを保護する方法について説明します。
+title: Cloud App Security でのユーザー データの匿名化
+description: この記事では、Cloud Discovery データ内のユーザー名を匿名化して、ユーザーのプライバシーを保護する方法について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -16,7 +16,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: b4d8a2c91d87df35445615e36b5caeb7d89de4f4
 ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/21/2020
 ms.locfileid: "81662334"
@@ -31,13 +31,13 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 
 - 個人情報は保存も、表示もされません。 暗号化された情報のみが保存され、表示されます。
 - 個人データは、テナントごとに専用のキーで AES-128 を使用して暗号化されます。
-- ユーザー名の解決は、指定の暗号化されたユーザー名を解読することで、アドホックでユーザー名ごとに随時実行されます。
+- ユーザー名の解決は、指定の暗号化されたユーザー名を解読することで、ユーザー名ごとに随時行われます。
 
 ## <a name="how-data-anonymization-works"></a>データの匿名化のしくみ
 
 1. データの匿名化を適用する方法は次の 3 つです。
 
-    - [新しいスナップショット レポートを作成](create-snapshot-cloud-discovery-reports.md)し、**[個人情報の匿名化]** を選択して、特定のログ ファイルのデータを匿名化するように設定できます。  
+    - [新しいスナップショット レポートを作成](create-snapshot-cloud-discovery-reports.md)し、 **[個人情報の匿名化]** を選択して、特定のログ ファイルのデータを匿名化するように設定できます。  
     ![スナップショット データの匿名化](media/anonymize-log.png)
 
     - 新しいデータ ソースを追加するときに **「Anonymize private information」** (個人情報の匿名化) を選択し、[新しいデータ ソースの自動アップロード](configure-automatic-log-upload-for-continuous-reports.md)に関するページを参照してデータを匿名化するように設定できます。  
@@ -47,8 +47,8 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 
     1. 「設定」 (歯車アイコン) の **[Cloud Discovery 設定]** を選択します。
 
-    2. 既定でユーザー名が匿名化されるようにするには、[匿名化] タブで、**「Anonymize private information by default in new reports and data sources」** (新しいレポートとデータ ソースの個人情報を既定で匿名化する) を選択します。 **[Anonymize machine information by default in 'Win10 Endpoint Users' report]\('Win10 エンドポイント ユーザー' レポートのマシンの情報を既定で匿名化する\)** を選択することもできます。
-    3. **[保存]** をクリックします。
+    2. 既定でユーザー名が匿名化されるようにするには、[匿名化] タブで、 **「Anonymize private information by default in new reports and data sources」** (新しいレポートとデータ ソースの個人情報を既定で匿名化する) を選択します。 **[Anonymize machine information by default in 'Win10 Endpoint Users' report]** \('Win10 エンドポイント ユーザー' レポートのマシン情報を既定で匿名化する\) を選択することもできます。
+    3. **[Save]** (保存) をクリックします。
 
     ![匿名化](media/anonymizer1.png)
 
@@ -58,46 +58,46 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 
     ![Cloud Discovery ダッシュボードの匿名化](media/anonymize-dashboard.png)
 
-5. 異常な使用量のアラートの調査など、特定の調査については、ポータルで特定のユーザー名を解決し、業務上の正当な理由を提供することができます。
+5. 異常な使用量のアラート調査など、特定の調査のために、ポータルで特定のユーザー名を解決し、業務上の正当な理由を示すことができます。
 
     > [!NOTE]
-    > 次の手順は **、[コンピューター] タブ**のコンピューター名にも使用できます。
+    > 次の手順は、 **[コンピューター]** タブのコンピューター名にも使用できます。
 
-    **1つのユーザー名を解決するには**
+    **1 つのユーザー名を解決するには**
 
-    1. 解決するユーザーの行の末尾にある3つの点をクリックし、[ **Deanonymize user**] を選択します。
+    1. 解決するユーザーの行の末尾にある 3 つの点をクリックし、 **[ユーザーの匿名化の解除]** を選択します。
 
-        ![匿名化 user テーブル](media/anonymize-user-table.png)
+        ![匿名化ユーザー テーブル](media/anonymize-user-table.png)
 
-    1. ポップアップで、ユーザー名を解決するための理由を入力し、[**解決**] をクリックします。 該当する行には、解決済みのユーザー名が表示されます。
+    1. ポップアップで、ユーザー名を解決する理由を入力し、 **[解決]** をクリックします。 該当する行に、解決済みのユーザー名が表示されます。
 
         > [!NOTE]
         > このアクションは監査されます。
 
-        ![匿名化のポップアップの解決](media/anonymize-resolve-dialog.png)
+        ![匿名化の解決ポップアップ](media/anonymize-resolve-dialog.png)
 
-    1つのユーザー名を解決する別の方法として、既知のユーザー名の暗号化されたユーザー名を検索することもできます。
+    1 つのユーザー名を解決する別の方法として、次のように既知のユーザー名の暗号化されたユーザー名を検索することもできます。
 
     1. 「設定」 (歯車アイコン) の **[Cloud Discovery 設定]** を選択します。
 
-    1. **[匿名化]** タブの **[Anonymize and resolve usernames]\(ユーザー名の匿名化と解決\)** で、解決策を実行する正当な理由を入力します。
-    1. **「Enter username to resolve」** (解決するユーザー名を入力してください) で、**「From anonymized」** (匿名化されたユーザー名を基にする) を選択して匿名化されたユーザー名を入力するか、**「To anonymized」** (匿名化されたユーザー名の実データを基にする) を選択して、解決する元のユーザー名を入力します。 **[解決]** をクリックします。
+    1. **[匿名化]** タブの **[Anonymize and resolve usernames]** \(ユーザー名の匿名化と解決\) で、解決を行う理由を入力します。
+    1. **「Enter username to resolve」** (解決するユーザー名を入力してください) で、 **「From anonymized」** (匿名化されたユーザー名を基にする) を選択して匿名化されたユーザー名を入力するか、 **「To anonymized」** (匿名化されたユーザー名の実データを基にする) を選択して、解決する元のユーザー名を入力します。 **[解決]** をクリックします。
 
         ![匿名化](media/anonymizer.png)
 
     **複数のユーザー名を解決するには**
 
-    1. 解決するユーザーによってユーザーアイコンにマウスポインターを置いたときに表示されるチェックボックスをオンにするか、左上隅にある [**一括選択**] チェックボックスをオンにします。
+    1. 解決するユーザーの近くにあるユーザー アイコンにマウス ポインターを置いたときに表示されるチェックボックスをオンにするか、左上隅にある **[一括選択]** チェックボックスをオンにします。
 
-        ![匿名化一括解決](media/anonymize-bulk-resolve.png)
+        ![匿名化の一括解決](media/anonymize-bulk-resolve.png)
 
-    1. [ **Deanonymize user**] をクリックします。
-    1. ポップアップで、ユーザー名を解決するための理由を入力し、[**解決**] をクリックします。 関連する行で、解決されたユーザー名が表示されます。
+    1. **[ユーザーの匿名化解除]** をクリックします。
+    1. ポップアップで、ユーザー名を解決する理由を入力し、 **[解決]** をクリックします。 該当する行に、解決済みのユーザー名が表示されます。
 
         > [!NOTE]
         > このアクションは監査されます。
 
-        ![匿名化のポップアップの解決](media/anonymize-resolve-dialog.png)
+        ![匿名化の解決ポップアップ](media/anonymize-resolve-dialog.png)
 
 6. アクションはポータルの**ガバナンス ログ**で監査されます。
 
@@ -106,6 +106,6 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [ポリシーを使用してクラウドアプリを制御する](control-cloud-apps-with-policies.md)
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

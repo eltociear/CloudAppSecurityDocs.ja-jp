@@ -1,6 +1,6 @@
 ---
-title: List-Entities API
-description: この記事では、Cloud App Security の Entities API でのリスト要求について説明します。
+title: 一覧表示 - Entities API
+description: この記事では、Cloud App Security の Entities API の一覧表示要求について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,19 +12,19 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.openlocfilehash: dec1065d4e2559a6ae080e90f6634528ed2132b7
 ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2020
 ms.locfileid: "84505261"
 ---
-# <a name="list---entities-api"></a>List-Entities API
+# <a name="list---entities-api"></a>一覧表示 - Entities API
 
 *適用対象:Microsoft Cloud App Security*
 
 > [!NOTE]
 > この要求は、Office 365 Cloud App Security では使用できません。
 
-GET 要求または POST 要求を実行して、指定したフィルターに一致するエンティティの一覧を取得します。
+指定したフィルターと一致するエンティティの一覧をフェッチする GET または POST 要求を実行します。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -38,17 +38,17 @@ POST /api/v1/entities/
 
 ## <a name="request-body-parameters"></a>要求本文のパラメーター
 
-| パラメーター | Description |
+| パラメーター | [説明] |
 | --- | --- |
-| filters | 要求のすべての検索フィルターを使用してオブジェクトをフィルター処理します。詳細については、「[エンティティフィルター](api-entities.md#filters) 」を参照してください。 |
-| sortDirection | 並べ替えの方向。 使用できる値は `asc` 、とです。`desc` |
-| sortField | エンティティの並べ替えに使用されるフィールド。 次のいずれかの値になります。<br /><br />**日付**: エンティティが作成された日付<br /><br />**重要度**: エンティティの重要度 |
-| skip | 指定された数のレコードをスキップします |
-| limit | 要求によって返されるレコードの最大数 |
+| filters | 要求のすべての検索フィルターでオブジェクトをフィルター処理します。詳細については、[エンティティ フィルター](api-entities.md#filters)に関するページを参照してください |
+| sortDirection | 並べ替えの方向。 指定できる値は `asc` および `desc` です。 |
+| sortField | エンティティの並べ替えに使用するフィールド。 指定できる値は次のとおりです。<br /><br />**date**:エンティティが作成された日付。<br /><br />**severity**:エンティティの重要度 |
+| skip | 指定した数のレコードをスキップします |
+| limit | 要求から返されるレコードの最大数 |
 
 ## <a name="example"></a>例
 
-### <a name="request"></a>Request
+### <a name="request"></a>要求
 
 要求の例を次に示します。
 
@@ -63,7 +63,7 @@ curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_reg
 }'
 ```
 
-### <a name="response"></a>Response
+### <a name="response"></a>[応答]
 
 アクティビティの一覧を JSON 形式で返します。
 

@@ -16,7 +16,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: a8cd5232ceaa08ed6d4446edf025cffe06787dfd
 ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/13/2020
 ms.locfileid: "81241255"
@@ -25,42 +25,42 @@ ms.locfileid: "81241255"
 
 *適用対象:Microsoft Cloud App Security*
 
-環境内で検出されたアプリの一覧を確認したら、次の方法で安全な**アプリ (承認****済み) を**承認するか、望ましくないアプリを禁止することで、環境をセキュリティで保護することができます。
+環境内で検出されたアプリの一覧を確認したら、次の方法で、安全なアプリを承認する (**承認された**) か、または不要なアプリを禁止する (**承認されていない**) ことによって、環境をセキュリティで保護できます。
 
-## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a>アプリの承認/却下
+## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a> アプリの承認/非承認
 
-特定の危険なアプリを非承認にすることができます。それには、行の終わりにある 3 つの点をクリックします。 次に、**[Unsanction]\(非承認\)** を選択します。 アプリを却下しても使用がブロックされることはありませんが、Cloud Discovery フィルターで使用状況を監視する作業が簡単になります。 非承認にしたアプリのユーザーに通知し、代わりに安全なアプリの使用を提案できます。
+特定の危険なアプリを承認しない場合は、行の末尾にある 3 つのドットをクリックします。 次に、 **[Unsanction]\(非承認\)** を選択します。 アプリを承認しないことによって、使用はブロックしませんが、Cloud Discovery フィルターによって、その使用をより簡単に監視できます。 さらに、承認されていないアプリのユーザーに通知し、それらの使用に対して代替の安全なアプリを提案することができます。
 
-![[承認されていない] のタグを付ける](media/tag-as-unsanctioned.png)
+![承認されていないとタグ付けする](media/tag-as-unsanctioned.png)
 
-承認または非承認にするアプリが一覧になっている場合、チェックボックスを使用して管理するアプリを選択してから、アクションを選択します。
+承認または承認されていないアプリの一覧がある場合は、チェックボックスを使用して、管理するアプリを選択し、さらにアクションを選択します。
 
-承認されていないアプリの一覧を照会するには、[Cloud App Security API を使用してブロック スクリプトを生成](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script)します。
+承認されていないアプリの一覧をクエリするには、[Cloud App Security API を使用してブロック スクリプトを生成](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script)できます。
 
 > [!NOTE]
-> テナントが Microsoft Defender Advanced Threat Protection (ATP)、Zscaler NSS、または iboss を使用している場合は、承認されていないものとしてマークしたすべてのアプリが Cloud App Security によって自動的にブロックされ、ブロックしているスクリプトの作成に関する以下のセクションは不要です。 詳細については、「 [Microsoft DEFENDER ATP との統合](wdatp-integration.md)」、「 [Zscaler と](zscaler-integration.md)の統合」、および「 [iboss との](iboss-integration.md)統合」を参照してください。
+> テナントで Microsoft Defender Advanced Threat Protection (ATP)、Zscaler NSS、または iboss を使用している場合は、承認されていないとマークしたすべてのアプリが Cloud App Security によって自動的にブロックされ、ブロックするスクリプトの作成に関する以下のセクションは不要になります。 詳細については、[Microsoft Defender ATP との統合](wdatp-integration.md)、[Zscaler との統合](zscaler-integration.md)、[iboss との統合](iboss-integration.md)に関するそれぞれのページをご覧ください。
 
-## <a name="export-a-block-script-to-govern-discovered-apps"></a>ブロック スクリプトをエクスポートして検出されたアプリを管理する
+## <a name="export-a-block-script-to-govern-discovered-apps"></a>検出されたアプリを管理するためにブロック スクリプトをエクスポートする
 
-Cloud App Security では、既存のオンプレミスのセキュリティ アプライアンスを使用することで、承認されていないアプリへのアクセスをブロックすることができます。 専用のブロック スクリプトを生成して、アプライアンスにインポートできます。 このソリューションでは、組織のすべての Web トラフィックをプロキシにリダイレクトする必要はありません。
+Cloud App Security により、既存のオンプレミスのセキュリティ アプライアンスを使用して、承認されていないアプリへのアクセスをブロックできます。 専用ブロック スクリプトを生成し、それをアプライアンスにインポートできます。 このソリューションでは、組織のすべての Web トラフィックをプロキシにリダイレクトする必要はありません。
 
-1. Cloud Discovery ダッシュボードで、ブロックするすべてのアプリに **[承認されていない]** のタグを付けます。
+1. Cloud Discovery ダッシュボードで、ブロックするすべてのアプリに、**承認されていない**とタグ付けします。
 
-    ![[承認されていない] のタグを付ける](media/tag-as-unsanctioned.png)
+    ![承認されていないとタグ付けする](media/tag-as-unsanctioned.png)
 
-2. タイトル バーで 3 つのドットをクリックして **[Generate block script... (ブロック スクリプトの生成...)]** を選択します。
+2. タイトル バーで、3 つのドットをクリックし、 **[ブロック スクリプトの生成...]** を選択します。
 
-    ![ブロック スクリプトを生成する](media/generate-block-script.png)
+    ![ブロック スクリプトの生成](media/generate-block-script.png)
 
-3. **[Generate block script (ブロック スクリプトの生成)]** で、ブロック スクリプトを生成するアプライアンスを選択します。
+3. **[ブロック スクリプトの生成]** で、ブロック スクリプトを生成するアプライアンスを選択します。
 
-    ![ブロック スクリプトのポップ アップを生成する](media/generate-block-script-pop-up.png)
+    ![ブロック スクリプトの生成ポップアップ](media/generate-block-script-pop-up.png)
 
-4. その後、[スクリプトの生成] ボタンをクリックして、承認されていないすべてのアプリに対してブロック スクリプトを作成します。 既定では、エクスポートされた日付と選択したアプライアンス タイプを基にファイルの名前が付けられます。 *2017-02-19_CAS_Fortigate_block_script.txt* はファイル名の例です。
+4. 次に、[スクリプトの生成] ボタンをクリックして、承認されていないすべてのアプリのブロック スクリプトを作成します。 既定で、ファイルには、エクスポートされた日付と選択したアプライアンスの種類で名前が付けられます。 *2017-02-19_CAS_Fortigate_block_script.txt* はファイル名の例です
 
-   ![ブロック スクリプトのボタンを生成する](media/generate-block-script-button.png)
+   ![ブロック スクリプトの生成ボタン](media/generate-block-script-button.png)
 
-5. アプライアンスに作成されたファイルをインポートします。
+5. 作成したファイルをアプライアンスにインポートします。
 
 ## <a name="next-steps"></a>次のステップ
 

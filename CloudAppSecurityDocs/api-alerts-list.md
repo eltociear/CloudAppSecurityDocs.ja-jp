@@ -1,6 +1,6 @@
 ---
-title: リスト-警告 API
-description: この記事では、Cloud App Security の Alerts API でのリスト要求について説明します。
+title: 一覧表示 - Alerts API
+description: この記事では、Cloud App Security の Alerts API の一覧表示要求について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,16 +12,16 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.openlocfilehash: ac3be42bfd076169a620a62566ed9cdad4e0c4a0
 ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2020
 ms.locfileid: "84505541"
 ---
-# <a name="list---alerts-api"></a>リスト-警告 API
+# <a name="list---alerts-api"></a>一覧表示 - Alerts API
 
 *適用対象:Microsoft Cloud App Security*
 
-GET 要求または POST 要求を実行して、指定したフィルターに一致するアラートの一覧を取得します。
+指定したフィルターと一致するアラートの一覧をフェッチする GET または POST 要求を実行します。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -35,17 +35,17 @@ POST /api/v1/alerts/
 
 ## <a name="request-body-parameters"></a>要求本文のパラメーター
 
-| パラメーター | Description |
+| パラメーター | [説明] |
 | --- | --- |
-| filters | 要求のすべての検索フィルターを使用してオブジェクトをフィルター処理します。詳細については、「[アラートフィルター](api-alerts.md#filters) 」を参照してください。 |
-| sortDirection | 並べ替えの方向。 使用できる値は `asc` 、とです。`desc` |
-| sortField | アラートの並べ替えに使用するフィールド。 次のいずれかの値になります。<br /><br />**日付**: アラートが作成された日付<br /><br />**重要度**: アラートの重要度 |
-| skip | 指定された数のレコードをスキップします |
-| limit | 要求によって返されるレコードの最大数 |
+| filters | 要求に対してすべての検索フィルターを使用してオブジェクトをフィルター処理します。詳細については、[アラートのフィルター](api-alerts.md#filters)に関するページを参照してください |
+| sortDirection | 並べ替えの方向。 指定できる値は `asc` および `desc` です。 |
+| sortField | アラートの並べ替えに使用するフィールド。 指定できる値は次のとおりです。<br /><br />**date**:アラートが作成された日付<br /><br />**severity**:アラートの重要度 |
+| skip | 指定した数のレコードをスキップします |
+| limit | 要求から返されるレコードの最大数 |
 
 ## <a name="example"></a>例
 
-### <a name="request"></a>Request
+### <a name="request"></a>要求
 
 要求の例を次に示します。
 
@@ -60,9 +60,9 @@ curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_reg
 }'
 ```
 
-### <a name="response"></a>Response
+### <a name="response"></a>[応答]
 
-JSON 形式のアラートの一覧を返します。
+アラートの一覧を JSON 形式で返します。
 
 ```json
 {

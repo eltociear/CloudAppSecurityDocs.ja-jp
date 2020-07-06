@@ -1,6 +1,6 @@
 ---
-title: List-Files API
-description: この記事では、Cloud App Security の Files API でのリスト要求について説明します。
+title: 一覧表示 - Files API
+description: この記事では、Cloud App Security の Files API の一覧表示要求について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,19 +12,19 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.openlocfilehash: 36ad7275650f130263777a18ff7f5a3198de897d
 ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2020
 ms.locfileid: "84505191"
 ---
-# <a name="list---files-api"></a>List-Files API
+# <a name="list---files-api"></a>一覧表示 - Files API
 
 *適用対象:Microsoft Cloud App Security*
 
 > [!NOTE]
 > この要求は、Office 365 Cloud App Security では使用できません。
 
-GET 要求または POST 要求を実行して、指定したフィルターに一致するファイルの一覧をフェッチします。
+指定したフィルターと一致するファイルの一覧をフェッチする GET または POST 要求を実行します。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -38,15 +38,15 @@ POST /api/v1/files/
 
 ## <a name="request-body-parameters"></a>要求本文のパラメーター
 
-| パラメーター | Description |
+| パラメーター | [説明] |
 | --- | --- |
-| filters | 要求のすべての検索フィルターを使用してオブジェクトをフィルター処理します。詳細については、「[ファイルフィルター](api-files.md#filters) 」を参照してください。 |
-| skip | 指定された数のレコードをスキップします |
-| limit | 要求によって返されるレコードの最大数 |
+| filters | 要求に対してすべての検索フィルターを使用してオブジェクトをフィルター処理します。詳細については、[ファイルのフィルター](api-files.md#filters)に関するページを参照してください |
+| skip | 指定した数のレコードをスキップします |
+| limit | 要求から返されるレコードの最大数 |
 
 ## <a name="example"></a>例
 
-### <a name="request"></a>Request
+### <a name="request"></a>要求
 
 要求の例を次に示します。
 
@@ -61,7 +61,7 @@ curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_reg
 }'
 ```
 
-### <a name="response"></a>Response
+### <a name="response"></a>[応答]
 
 JSON 形式のファイルの一覧を返します。
 

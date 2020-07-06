@@ -1,6 +1,6 @@
 ---
-title: フィードバック-アクティビティ API
-description: この記事では、Cloud App Security のアクティビティ API でのフィードバック要求について説明します。
+title: フィードバック - Activities API
+description: この記事では、Cloud App Security の Activities API のフィードバック要求について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,16 +12,16 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.openlocfilehash: f95aa64c984484d62cea728def5efa729d22b185
 ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2020
 ms.locfileid: "84505651"
 ---
-# <a name="feedback-on-activity---activities-api"></a>アクティビティに関するフィードバック-アクティビティ API
+# <a name="feedback-on-activity---activities-api"></a>アクティビティに関するフィードバック - Activities API
 
 *適用対象:Microsoft Cloud App Security*
 
-POST 要求を実行して、指定された主キーに一致するアクティビティに関するフィードバックを送信します。
+指定した主キーと一致するアクティビティに関するフィードバックを送信する POST 要求を実行します。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -29,21 +29,21 @@ POST 要求を実行して、指定された主キーに一致するアクティ
 POST /api/v1/activities/<pk>/feedback
 ```
 
-## <a name="request-url-parameters"></a>要求 URL パラメーター
+## <a name="request-url-parameters"></a>要求 URL のパラメーター
 
-| パラメーター | Description |
+| パラメーター | [説明] |
 | --- | --- |
 | pk | アクティビティの ID |
 
 ## <a name="request-body-parameters"></a>要求本文のパラメーター
 
-| パラメーター | Description |
+| パラメーター | [説明] |
 | --- | --- |
-| feedback | 活動に関するフィードバック |
+| feedback | アクティビティに関するフィードバック |
 
 ## <a name="example"></a>例
 
-### <a name="request"></a>Request
+### <a name="request"></a>要求
 
 要求の例を次に示します。
 
@@ -56,7 +56,7 @@ curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_reg
 }'
 ```
 
-### <a name="response"></a>Response
+### <a name="response"></a>[応答]
 
 アクティビティの一覧を JSON 形式で返します。
 

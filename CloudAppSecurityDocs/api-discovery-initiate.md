@@ -1,6 +1,6 @@
 ---
-title: ファイルのアップロードの開始-Cloud Discovery API
-description: この記事では、Cloud App Security の Cloud Discovery API での upload_url 要求について説明します。
+title: ファイルのアップロードの開始 - Cloud Discovery API
+description: この記事では、Cloud App Security の Cloud Discovery API の upload_url 要求について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,16 +12,16 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.openlocfilehash: 6259161ecaa02a7820d97aafc5b7efb98c988c07
 ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2020
 ms.locfileid: "84505391"
 ---
-# <a name="initiate-file-upload---cloud-discovery-api"></a>ファイルのアップロードの開始-Cloud Discovery API
+# <a name="initiate-file-upload---cloud-discovery-api"></a>ファイルのアップロードの開始 - Cloud Discovery API
 
 *適用対象:Microsoft Cloud App Security*
 
-GET 要求を実行して、アップロードプロセスを開始します。 この呼び出し (最初の3つ) は、後でアップロード (PUT) 要求を実行するために使用される URL を返します。
+アップロード プロセスを開始する GET 要求を実行します。 3 つのうちの 1 つ目のこの呼び出しからは、後でアップロード (PUT) 要求を実行するために使用される URL が返されます。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -29,12 +29,12 @@ GET 要求を実行して、アップロードプロセスを開始します。 
 GET /api/v1/discovery/upload_url/
 ```
 
-## <a name="request-url-parameters"></a>要求 URL パラメーター
+## <a name="request-url-parameters"></a>要求 URL のパラメーター
 
-| パラメーター | Description |
+| パラメーター | [説明] |
 | --- |--- |
-| ファイル名 | Cloud Discovery の処理にアップロードするファイルの名前 |
-| source | アップロードされている Cloud Discovery ログファイルの種類 |
+| filename | Cloud Discovery の処理にアップロードするファイルの名前 |
+| ソース | アップロードされる Cloud Discovery ログ ファイルの種類 |
 
 現在、次のソースの種類がサポートされています。
 
@@ -86,16 +86,16 @@ GET /api/v1/discovery/upload_url/
 > [!NOTE]
 > ファイル形式が見つからない場合は、ポータルを使用して手動アップロードを実行します。
 
-## <a name="response-parameters"></a>応答パラメーター
+## <a name="response-parameters"></a>応答のパラメーター
 
-| パラメーター | 説明 |
+| パラメーター | [説明] |
 | --- | --- |
 | url | Cloud Discovery のアップロードを実行するターゲット URL。 |
-| provider | "Azure" または "aws" のいずれかで、アップロードが Windows Azure Storage と AWS S3 ストレージのどちらを対象としているかを示します。 |
+| provider | "azure" または "aws" のいずれか。アップロードが Windows Azure Storage と AWS S3 ストレージのどちらを対象としているかを示します。 |
 
 ## <a name="example"></a>例
 
-### <a name="request"></a>Request
+### <a name="request"></a>要求
 
 要求の例を次に示します。
 
@@ -103,7 +103,7 @@ GET /api/v1/discovery/upload_url/
 curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/upload_url/?filename=my_discovery_file.txt&source=LOG_3COM"
 ```
 
-### <a name="response"></a>Response
+### <a name="response"></a>[応答]
 
 JSON 応答の例を次に示します。
 

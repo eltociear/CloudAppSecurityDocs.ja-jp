@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security との汎用 SIEM の統合
+title: Cloud App Security と汎用 SIEM の統合
 description: この記事では、汎用 SIEM と Cloud App Security の統合に関する情報を提供します。
 keywords: ''
 author: shsagir
@@ -15,7 +15,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 546912761fb854adecc9d7626465b694f02b20b7
 ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/27/2020
 ms.locfileid: "82161811"
@@ -24,30 +24,30 @@ ms.locfileid: "82161811"
 
 *適用対象:Microsoft Cloud App Security*
 
-Microsoft Cloud App Security を汎用 SIEM サーバーと統合することで、接続されているアプリからのアラートとアクティビティを一元的に監視できます。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Microsoft Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
+Microsoft Cloud App Security と汎用 SIEM サーバーを統合し、接続アプリから、アラートとアクティビティを一元的に監視できます。 接続アプリでは新しいアクティビティとイベントがサポートされるため、それらの表示が Microsoft Cloud App Security にロールアウトされます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化できます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
 
-SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 この機能を長期間無効にしてから再び有効にすると、過去 2 日間分のアラートとアクティビティが転送され、それからそれ以降のすべてのアラートとアクティビティが転送されます。
+SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 この機能を長期間無効にしてから再び有効にすると、過去 2 日間分のアラートとアクティビティが転送され、次にそれ以降のすべてのアラートとアクティビティが転送されます。
 
 追加の統合ソリューションには次のものがあります。
 
-* **Azure Sentinel** -ネイティブ統合のためのスケーラブルなクラウドネイティブ SIEM と非常。 Azure Sentinel との統合の詳細については、「 [Azure sentinel の統合](siem-sentinel.md)」を参照してください。
-* **Microsoft security GRAPH API** -複数のセキュリティプロバイダーに接続するための単一のプログラムインターフェイスを提供する仲介サービス (またはブローカー) です。 詳細については、「 [Microsoft Graph セキュリティ API を使用したセキュリティソリューションの統合](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft)」を参照してください。
+* **Azure Sentinel** - ネイティブ統合用のスケーラブルでクラウドネイティブの SIEM および SOAR です。 Azure Sentinel との統合の詳細については、「[Azure Sentinel 統合](siem-sentinel.md)」を参照してください。
+* **Microsoft セキュリティ グラフ API** - 複数のセキュリティ プロバイダーに接続するための単一のプログラムによるインターフェイスを提供する中間サービス (またはブローカー) です。 詳細については、「[Microsoft Graph Security API を使用したセキュリティ ソリューションの統合](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft)」を参照してください。
 
 > [!IMPORTANT]
-> Cloud App Security で Azure Advanced Threat Protection を統合していて、両方のサービスが SIEM にアラート通知を送信するように構成されている場合は、同じアラートに対して重複する SIEM 通知を受け取ることになります。 各サービスからはアラートが 1 つ発行され、異なるアラート ID が与えられます。 重複や混乱を避けるためには、必ずシナリオに対処してください。 たとえば、アラートの管理を実行する場所を決定し、もう一方のサービスから送信される SIEM 通知を停止します。
+> Cloud App Security に Azure Advanced Threat Protection を統合し、アラート通知を SIEM に送信するように両方のサービスを構成している場合、同じアラートに対して重複する SIEM 通知が送られてきます。 各サービスからはアラートが 1 つ発行され、異なるアラート ID が与えられます。 重複や混乱を避けるため、このシナリオに対処してください。 たとえば、アラート管理を実行する箇所を決定し、他のサービスからの SIEM 通知の送信を停止します。
 
 ## <a name="generic-siem-integration-architecture"></a>汎用 SIEM 統合アーキテクチャ
 
 SIEM エージェントは組織のネットワークに展開されます。 展開と構成が行われると、Cloud App Security RESTful API を使用して構成を行ったデータの種類 (アラートとアクティビティ) がプルされます。
 ポーリングされるトラフィックはポート 443 の暗号化された HTTPS チャネルを通じて送信されます。
 
-SIEM エージェントは Cloud App Security からデータを取得すると、ローカル SIEM に Syslog メッセージを送信します。 Cloud App Security では、セットアップ中に指定されたネットワーク公正が使用されます (TCP または UDP とカスタム ポート)。
+SIEM エージェントで Cloud App Security からデータが受け取られると、ローカル SIEM に Syslog メッセージが送信されます。 Cloud App Security では、セットアップ時に指定したネットワーク構成 (カスタムポートによる TCP または UDP) が使用されます。
 
 ![SIEM 統合アーキテクチャ](media/siem-architecture.png)
 
-## <a name="supported-siems"></a>サポートされる SIEM
+## <a name="supported-siems"></a>サポートされている SIEM
 
-Cloud App Security は現在、Micro Focus ArcSight と汎用 CEF をサポートしています。
+Cloud App Security では現在、Micro Focus ArcSight と汎用 CEF がサポートされています。
 
 ## <a name="how-to-integrate"></a>統合方法
 
@@ -57,27 +57,27 @@ SIEM との統合は次の 3 つの手順で行われます。
 2. JAR ファイルをダウンロードし、サーバーで実行します。
 3. SIEM エージェントが動作しているか検証します。
 
-### <a name="prerequisites"></a>前提条件
+### <a name="prerequisites"></a>[前提条件]
 
 * 標準的な Windows または Linux サーバー (仮想マシンを使用可)。
-* OS: Windows または Linux
-* CPU: 2
-* ディスク領域: 20 GB
-* RAM: 2 GB
-* サーバーは Java 8 を実行している必要があります。 これより古いバージョンはサポートしていません。
-* [ネットワーク要件](network-requirements.md)で説明されているとおりにファイアウォールを設定する
+* OS:Windows または Linux
+* CPU:2
+* ディスク領域:20 GB
+* RAM:2 GB
+* サーバーで Java 8 を実行している必要があります。 以前のバージョンはサポートされません。
+* 「[ネットワークの要件](network-requirements.md)」で説明されているとおりに、ファイアウォールを設定します
 
 ## <a name="integrating-with-your-siem"></a>SIEM との統合
 
-### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>手順 1: Cloud App Security ポータルでセットアップする
+### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>手順 1:Cloud App Security ポータルでセットアップする
 
-1. Cloud App Security ポータルの**設定**歯車で、[**セキュリティ拡張機能**] をクリックします。
+1. Cloud App Security ポータルの **[設定]** 歯車で、 **[セキュリティ拡張機能]** をクリックします。
 
-1. [ **SIEM エージェント**] タブで、[追加**+**] () をクリックし、[**汎用 SIEM**] を選択します。
+1. **[SIEM エージェント]** タブで、追加 ( **+** ) をクリックし、 **[Generic SIEM]\(汎用 SIEM\)** を選択します。
 
     ![SIEM 統合の追加メニューを示すスクリーンショット](media/siem0.png)
 
-1. ウィザードで、**[ウィザード起動]** をクリックします。
+1. ウィザードで、 **[ウィザード起動]** をクリックします。
 1. ウィザードで、名前を入力し、**SIEM 形式を選択**して、その形式に関する**詳細設定**をすべて設定します。 **[次へ]** をクリックします。
 
     ![SIEM の全般設定](media/siem1.png)
@@ -87,36 +87,36 @@ SIEM との統合は次の 3 つの手順で行われます。
 
     ![リモートの Syslog 設定](media/siem2.png)
 
-1. **[アラート]** と **[アクティビティ]** に対して、SIEM サーバーにエクスポートするデータの種類を選択します。 スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。 **[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認します。 **[次へ]** をクリックします。
+1. **アラート**と**アクティビティ**について、SIEM サーバーにエクスポートするデータの種類を選択します。 スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。 **[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認します。 **[次へ]** をクリックします。
 
    ![データの種類の設定](media/siem3.png)
 
 1. トークンをコピーし、保存して後で使用できるようにします。
-    [完了] をクリックし、ウィザードを終了します。 SIEM ページに戻ると、追加した SIEM エージェントがテーブルに表示されます。 後で接続されるまで **[作成済み]** と表示されます。
+    [完了] をクリックして、ウィザードを終了します。 SIEM ページに戻り、テーブルに追加した SIEM エージェントを確認します。 後で接続されるまで **[作成済み]** と表示されます。
 
 > [!NOTE]
-> 作成した任意のトークンは作成した管理者に属します。 つまり、管理者ユーザーが Cloud App Security から削除されると、トークンが無効になります。
+> 作成したトークンは、それを作成した管理者にバインドされます。 これは、管理者ユーザーが Cloud App Security から削除されると、トークンが有効でなくなることを意味します。
 
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2: JAR ファイルをダウンロードし、サーバーで実行する
+### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2:JAR ファイルをダウンロードし、サーバーで実行する
 
-1. [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=838596) で、[ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意した後、.zip ファイルをダウンロードして解凍します。
+1. [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=838596)で、[ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意したら、.zip ファイルをダウンロードして解凍します。
 
-1. 抽出されたファイルをサーバーで実行します。
+1. サーバーで抽出したファイルを実行します。
 
     `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN`
 
 > [!NOTE]
 >
 > * ファイル名は、SIEM エージェントのバージョンによって異なる場合があります。
-> * 角かっこ [  ] で囲まれたパラメーターは省略可能です。関係する場合にのみ使用してください。
-> * サーバーの起動時に JAR を実行することをお勧めします。
->   * Windows: スケジュールされたタスクとして実行し、**ユーザーがログオンしているかどうかにかかわらず**タスクを実行するように構成し、[次の時間**より長く実行する場合はタスクを停止**する] チェックボックスをオフにします。
->   * Linux: を含む run コマンド**&** を rc. ローカルファイルに追加します。 例: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+> * 角かっこ [] で囲まれたパラメーターは省略可能で、関係する場合にのみ使用してください。
+> * サーバーの起動時に JAR を実行することが推奨されます。
+>   * Windows:スケジュールされたタスクとして実行し、**ユーザーがログオンしているかどうかにかかわらず実行する**ようにタスクを構成し、 **[タスクを停止するまでの時間]** チェックボックスをオフにしていることを確認します。
+>   * Linux: **&** を付けた実行コマンドを rc.local ファイルに追加します。 例: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 各変数の使用方法:
 
 * DIRNAME は、ローカル エージェント デバッグ ログで使用するディレクトリのパスです。
-* アドレス [:P ORT] は、サーバーが * nternet に接続するために使用するプロキシサーバーのアドレスとポートです。
+* ADDRESS[:PORT] は、サーバーが *nternet に接続する際に使用するプロキシ サーバーのアドレスとポートです。
 * TOKEN は、前の手順でコピーした SIEM エージェント トークンです。
 
 「-h」と入力すれば、いつでもヘルプを表示できます。
@@ -137,7 +137,7 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 >
 >`2017-11-28T19:24:55.000Z LAB-EUW-ARCTEST CEF:0|MCAS|SIEM_Agent|0.112.68|EVENT_CATEGORY_DELETE_OBJECT|Delete object|0|externalId=1511897117617_5be018ee-f676-4473-a9b5-5982527409be rt=1511897095000 start=1511897095000 end=1511897095000 msg=Delete object: ServiceNow Object b1709c40db360300906ff34ebf961923 suser=admin@contoso.com destinationServiceName=ServiceNow dvc= requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511897117617_5be018ee-f676-4473-a9b5-5982527409be,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=,,admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=`
 
-次のテキストはアラートのログ ファイル例です。
+次のテキストはアラート ログファイルの例です。
 
 >`2017-07-15T20:42:30.531Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|myPolicy|3|externalId=596a7e360c204203a335a3fb start=1500151350531 end=1500151350531 msg=Activity policy ''myPolicy'' was triggered by ''admin@box-contoso.com'' suser=admin@box-contoso.com destinationServiceName=Box cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596a7e360c204203a335a3fb cs2Label=uniqueServiceAppIds cs2=APPID_BOX cs3Label=relatedAudits cs3=1500151288183_acc891bf-33e1-424b-a021-0d4370789660 cs4Label=policyIDs cs4=59f0ab82f797fa0681e9b1c7`
 >
@@ -151,58 +151,58 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 >
 >`2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=`
 
-#### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF フォーマットの Cloud App Security アラートのサンプル
+#### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF 形式の Cloud App Security アラートのサンプル
 
-| 適用対象 | CEF フィールド名 | 説明 |
+| 次に対して適用可能 | CEF フィールド名 | [説明] |
 | --- | --- | --- |
 | アクティビティ/アラート | start | アクティビティまたはアラートのタイムスタンプ |
 | アクティビティ/アラート | end | アクティビティまたはアラートのタイムスタンプ |
 | アクティビティ/アラート | rt | アクティビティまたはアラートのタイムスタンプ |
-| アクティビティ/アラート | msg | ポータルで表示されるアクティビティまたはアラートの説明 |
+| アクティビティ/アラート | msg | ポータルに表示されるアクティビティまたはアラートの説明 |
 | アクティビティ/アラート | suser | アクティビティまたはアラートの対象ユーザー |
-| アクティビティ/アラート | destinationServiceName | Office 365、SharePoint、Box などのアプリから発生するアクティビティまたはアラート。 |
-| アクティビティ/アラート | cs\<X>ラベル | 各ラベルにはそれぞれ別の意味があり、ラベル自体からその意味がわかる (例: targetObjects)。 |
-| アクティビティ/アラート | cs\<X> | ラベルに対応する情報 (ラベル例では、アクティビティまたはアラートの対象ユーザー)。 |
-| Activities | EVENT_CATEGORY_* | アクティビティの大まかなカテゴリ |
-| Activities | \<アクション> | ポータルに表示されるアクティビティの種類 |
-| Activities | externalId | イベント ID |
-| Activities | dvc | クライアント デバイスの IP |
-| Activities | requestClientApplication | クライアント デバイスのユーザー エージェント |
-| 警告 | \<アラートの種類> | たとえば、"ALERT_CABINET_EVENT_MATCH_AUDIT" |
-| 警告 | \<名前> | 一致するポリシー名 |
-| 警告 | externalId | アラート ID |
-| 警告 | src | クライアントデバイスの IPv4 アドレス |
-| 警告 | c6a1 | クライアントデバイスの IPv6 アドレス |
+| アクティビティ/アラート | destinationServiceName | アクティビティまたはアラートの生成元アプリ (Office 365、SharePoint、Box など)。 |
+| アクティビティ/アラート | cs\<X>Label | 各ラベルは異なる意味を持ちますが、targetObjects など、ラベル自体でそれが説明されています。 |
+| アクティビティ/アラート | cs\<X> | ラベルに対応する情報 (ラベルの例によると、アクティビティまたはアラートのターゲット ユーザー)。 |
+| アクティビティ | EVENT_CATEGORY_* | アクティビティの高レベル カテゴリ |
+| アクティビティ | \<ACTION> | ポータルに表示されるアクティビティの種類 |
+| アクティビティ | externalId | イベント ID |
+| アクティビティ | dvc | クライアント デバイスの IP |
+| アクティビティ | requestClientApplication | クライアント デバイスのユーザー エージェント |
+| アラート | \<alert type> | たとえば、"ALERT_CABINET_EVENT_MATCH_AUDIT" |
+| アラート | \<name> | 一致したポリシー名 |
+| アラート | externalId | アラート ID |
+| アラート | src | クライアント デバイスの IPv4 アドレス |
+| アラート | c6a1 | クライアント デバイスの IPv6 アドレス |
 
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作しているか検証する
+### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3:SIEM エージェントが動作していることを検証する
 
-1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続が 2 時間以上停止した場合、**[接続エラー]** と表示されます。 接続の停止時間が 12 時間を超えると、状態が **[切断]** と表示されます。
+1. Cloud App Security ポータルで SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないこと、およびエージェント通知がないことを確認します。 接続が 2 時間以上ダウンしている場合は、 **[接続エラー]** と表示されます。 接続が 12 時間以上ダウンしている場合は、状態が **[切断]** と表示されます。
  ![SIEM が切断されている状態](media/siem-not-connected.png)
 
-    以下のように接続状態である必要があります。![SIEM が接続されている状態](media/siem-connected.png)
+    代わりに、次に示すように、状態は接続済みになっているはずです。![SIEM 接続済み](media/siem-connected.png)
 
 1. Syslog/SIEM サーバーで、Cloud App Security から送られたアクティビティとアラートが表示されていることを確認します。
 
 ## <a name="regenerating-your-token"></a>トークンの再生成
 
-トークンをなくした場合、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックすればいつでも再生成できます。 **[トークンの再生成]** を選択すると、新しいトークンが与えられます。
+トークンが失われた場合は、テーブルの SIEM エージェント行の末尾にある 3 つのドットをクリックして、いつでも再生成することができます。 **[トークンの再生成]** を選択して、新しいトークンを取得しますす。
 
 ![SIEM - トークンの再生成](media/siem-regenerate-token.png)
 
 ## <a name="editing-your-siem-agent"></a>SIEM エージェントの編集
 
-SIEM エージェントを編集するには、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、**[編集]** を選択します。 SIEM エージェントを編集する場合、.jar ファイルを再実行する必要はありません。自動的に更新されます。
+SIEM エージェントを編集するには、テーブルの SIEM エージェント行の末尾にある 3 つのドットをクリックし、 **[編集]** を選択します。 SIEM エージェントを編集する場合、.jar ファイルを再実行する必要はなく、自動的に更新されます。
 
 ![SIEM - 編集](media/siem-edit.png)
 
 ## <a name="deleting-your-siem-agent"></a>SIEM エージェントの削除
 
-SIEM エージェントを削除するには、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、**[削除]** を選択します。
+SIEM エージェントを削除する場合は、テーブルの SIEM エージェント行の末尾にある 3 つのドットをクリックし、 **[削除]** を選択します。
 
 ![SIEM - 削除](media/siem-delete.png)
 
 > [!NOTE]
-> この機能はパブリック プレビュー段階にあります。
+> この機能はパブリック プレビューの状態にあります。
 
 ## <a name="next-steps"></a>次のステップ
 

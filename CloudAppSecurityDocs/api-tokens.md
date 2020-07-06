@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security での API トークンの管理
+title: Cloud App Security の API トークン管理
 description: この記事では、Cloud App Security 用の API トークンの生成に関する情報を提供します。
 keywords: ''
 author: shsagir
@@ -16,74 +16,74 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: fcde5b08363a790cf18cf873c0dfde183ec6ddcd
 ms.sourcegitcommit: 9165220189564860d74a255a5c0be1ed362ba152
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/01/2020
 ms.locfileid: "80522552"
 ---
 # <a name="api-tokens"></a>API トークン
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-Microsoft Cloud App Security API を使用すると、REST API エンドポイントを介して、プログラムで Cloud App Security にアクセスできます。 アプリケーションでは、API を使用して Cloud App Security のデータとオブジェクトに対して読み取りおよび更新操作を実行できます。 たとえば、Cloud App Security API は、ユーザーオブジェクトに対して次の一般的な操作をサポートします。
+Microsoft Cloud App Security API を使用すると、REST API エンドポイントを介して、プログラムで Cloud App Security にアクセスできます。 アプリケーションでは、API を使用して、Cloud App Security のデータとオブジェクトに対する読み取りと更新の操作を実行できます。 たとえば、Cloud App Security API では、ユーザー オブジェクトに対する次の一般的な操作がサポートされています。
 
-- Cloud Discovery のログファイルのアップロード
-- ブロックスクリプトの生成
-- 活動、アラート、およびポリシーレポートを一覧表示する
-- アラートを破棄または解決する
+- Cloud Discovery にログ ファイルをアップロードする
+- ブロック スクリプトを生成する
+- アクティビティ、アラート、およびポリシー レポートを一覧表示する
+- アラートを無視または解決する
 
-API の完全なドキュメントについては、Cloud App Security ポータルで、[ヘルプ] > **api ドキュメント**を参照してください。
+API の完全なドキュメントを確認するには、Cloud App Security ポータルで、[ヘルプ] > **[API ドキュメント]** に移動します。
 
 API にアクセスするには、API トークンを作成し、それをソフトウェアで使用して Cloud App Security API に接続する必要があります。
 
-[API トークン] タブを使用すると、テナントのすべての API トークンを管理できます。
+[API トークン] タブでは、テナントのすべての API トークンを管理できます。
 
 ## <a name="generate-a-token"></a>トークンを生成する
 
 1. **[設定]** メニューで、 **[セキュリティ拡張機能]** 、 **[API トークン]** の順に選択します。
 
-2. プラスアイコンをクリックし、 **[新しいトークンの生成]** をクリックして、後でトークンを識別する名前を指定し、 **[次へ]** をクリックします。
-  ![Cloud App Security によって API トークンが生成され](media/api-token-gen.png)
+2. プラス アイコン、 **[新しいトークンの生成]** の順にクリックし、後でトークンを識別するための名前を指定して、 **[次へ]** をクリックします。
+  ![Cloud App Security によって API トークンが生成される](media/api-token-gen.png)
 
-3. トークン値をコピーし、復旧のためにどこかに保存します。これを紛失した場合は、トークンを再生成する必要があります。 トークンには、それを発行したユーザーの特権があります。 たとえば、セキュリティ閲覧者は、データを変更できるトークンを発行することはできません。
+3. トークンの値をコピーし、回復用にどこかに保存しておきます。これを紛失した場合、トークンを再生成する必要があります。 トークンには、それを発行したユーザーの権限が設定されます。 たとえば、セキュリティ閲覧者は、データを変更できるトークンを発行できません。
 
-4. トークンをフィルター処理するには、状態 (アクティブ、非アクティブ、生成済み) を使用します。
+4. 次の状態によってトークンをフィルター処理できます。アクティブ、非アクティブ、または作成。
 
-    - 生成されたトークンは、一度も使用されていません。
-    - アクティブとは、過去7日以内に生成され、使用されたトークンです。
-    - 非アクティブなが使用されましたが、過去7日間のアクティビティはありませんでした。
+    - [作成] は、使用されたことがないトークンです。
+    - [アクティブ] は、過去 7 日以内に生成され、使用されたトークンです。
+    - [非アクティブ] は使用されましたが、過去 7 日間アクティビティが発生しませんでした。
 
 5. 新しいトークンを生成すると、Cloud App Security ポータルへのアクセスに使用する新しい URL が提供されます。
 
     ![Cloud App Security API トークン](media/generate-api-token.png)
 
-    汎用ポータル URL は引き続き機能しますが、トークンによって提供されるカスタム URL に比べてかなり遅くなります。 いつでも URL を忘れた場合は、「」にアクセスして確認でき**ます。** アイコンをクリックし、 **[バージョン情報]** を選択します。
+    汎用ポータル URL も引き続き機能しますが、トークンと共に提供されるカスタム URL よりかなり遅くなります。 URL を忘れた場合は、いつでもメニューの **?** アイコンに移動し、 **[バージョン情報]** を選択して、それを表示できます。
 
 > [!NOTE]
-> Azure Active Directory Privileged Identity Management ロールのアクティブ化を使用している場合は、ロールがアクティブになると、API トークンが有効になります。 詳細については、「 [PIM での Azure AD ロールのアクティブ化](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role)」を参照してください。
+> Azure Active Directory Privileged Identity Management ロールのアクティブ化を使用している場合は、ロールがアクティブにされた場合にのみ、API トークンが有効になります。 詳細については、「[PIM で Azure AD ロールをアクティブ化する](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role)」を参照してください。
 
-## <a name="api-token-management"></a>API トークンの管理
+## <a name="api-token-management"></a>API トークン管理
 
-[API トークン] ページには、生成されたすべての API トークンのテーブルが含まれています。
+[API トークン] ページには、生成されたすべての API トークンのテーブルが表示されます。
 
-完全な管理者は、このテナントに対して生成されたすべてのトークンを表示します。 他のユーザーには、自身が生成したトークンだけが表示されます。
+完全な権限を持つ管理者には、このテナントに対して生成されたすべてのトークンが表示されます。 その他のユーザーには、自分が生成したトークンだけが表示されます。
 
-このテーブルは、トークンが生成された日時と最後に使用された日時に関する詳細を提供し、トークンを取り消すことができます。
+このテーブルでは、トークンが生成されたときと、最後に使用されたときに関する詳細が提供され、トークンを取り消すことができます。
 
-トークンが失効すると、そのトークンはテーブルから削除され、それを使用していたソフトウェアは、新しいトークンが提供されるまで API を呼び出すことができません。
+トークンが取り消されると、テーブルから削除され、それを使用していたソフトウェアは、新しいトークンが提供されるまで API 呼び出しに失敗します。
 
 > [!NOTE]
 >
-> - SIEM コネクタとログコレクターも API トークンを使用します。 これらのトークンは、ログコレクターおよび SIEM エージェントのセクションから管理する必要があり、この表には記載されていません。
-> - プロビジョニング解除 users API トークンは Cloud App Security に保持されますが、使用することはできません。 これらを使用しようとすると、アクセス許可の拒否応答が返されます。 ただし、このようなトークンは **[API トークン]** ページで取り消すことをお勧めします。
+> - SIEM コネクタとログ コレクターでも API トークンが使用されます。 これらのトークンは、ログ コレクターおよび SIEM エージェントのセクションから管理する必要があり、このテーブルには表示されません。
+> - プロビジョニング解除されたユーザー API トークンは Cloud App Security に保持されますが、使用することはできません。 これらを使用しようとすると、アクセス許可の拒否の応答が返されます。 ただし、そのようなトークンは、 **[API トークン]** ページで取り消すことが推奨されます。
 
-## <a name="next-steps"></a>次のステップ:
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [SIEM の統合に関する問題のトラブルシューティング](troubleshooting-siem.md)
+> [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 
 ## <a name="check-out-this-video"></a>こちらのビデオをご覧ください。
 
-[Microsoft Cloud App Security – REST API とトークン](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+[Microsoft Cloud App Security - REST API とトークン](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

@@ -1,6 +1,6 @@
 ---
 title: Cloud App Security Entities API
-description: この記事では、Entities API の使用について説明します。
+description: この記事では、Entities API の使用方法について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,7 +12,7 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.openlocfilehash: d55eb6d29586ba68cb46bd97b6718529da87ea51
 ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2020
 ms.locfileid: "84505221"
@@ -24,33 +24,33 @@ ms.locfileid: "84505221"
 > [!NOTE]
 > この API は、Office 365 Cloud App Security では使用できません。
 
-Entities API は、組織のクラウドアプリを使用してユーザーとアカウントに関する基本的な情報を提供し、サービスの使用パターンを理解できるようにします。
+Entities API を使用すると、組織のクラウド アプリを使用するユーザーとアカウントに関する基本情報を取得し、サービスの使用パターンを把握できます。
 
-サポートされている要求を次に示します。
+サポートされている要求は次のとおりです。
 
-- [リスト エンティティ](api-entities-list.md)
-- [Fetch エンティティ](api-entities-fetch.md)
-- [エンティティツリーのフェッチ](api-entities-fetch-tree.md)
+- [エンティティの一覧表示](api-entities-list.md)
+- [エンティティのフェッチ](api-entities-fetch.md)
+- [エンティティ ツリーのフェッチ](api-entities-fetch-tree.md)
 
-## <a name="filters"></a>フィルター
+## <a name="filters"></a>フィルタ
 
 フィルターの動作の詳細については、「[フィルター](api-introduction.md#filters)」を参照してください。
 
-次の表では、サポートされるフィルターについて説明します。
+サポートされているフィルターを次の表に示します。
 
-| Assert | 種類 | 演算子 | 説明 |
+| フィルター | Type | 演算子 | [説明] |
 | --- | --- | --- | --- |
-| type| string | eq、neq | 型でエンティティをフィルター処理する |
-| isAdmin | string | eq | 管理者であるエンティティをフィルター処理する |
-| エンティティ | エンティティ pk | eq、neq | 特定のエンティティを含むエンティティをフィルター pk します。 ユーザーが選択されている場合は、もそのすべてのアカウントを返します。 例: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
-| userGroups |string | eq、neq | 関連付けられているグループ Id を使ってエンティティをフィルター処理する |
-| app | 整数 (integer) | eq、neq | 指定された SaaS ID を持つサービスを使用してエンティティをフィルター処理します。例: 11770 |
-| instance | 整数 (integer) | eq、neq | 指定された Appstances (SaaS ID とインスタンス ID) を持つサービスを使用してエンティティをフィルター処理します。例: 11770, 1059065 |
-| isExternal | boolean | eq | エンティティの所属。 指定できる値は、次のとおりです。<br /><br />**true**: 外部<br />**false**: 内部<br />**null**: 値なし |
+| type| string | eq、neq | 型でエンティティをフィルター処理します |
+| isAdmin | string | eq | 管理者であるエンティティをフィルター処理します |
+| entity | entity pk | eq、neq | 特定のエンティティの pk を含むエンティティをフィルター処理します。 ユーザーが選択されている場合は、そのすべてのアカウントも返されます。 例: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
+| userGroups |string | eq、neq | 関連付けられているグループ ID でエンティティをフィルター処理します |
+| app | integer | eq、neq | 指定した SaaS ID を持つサービスを使用してエンティティをフィルター処理します。次に例を示します。11770 |
+| インスタンス | integer | eq、neq | 指定した SaaS ID のサービスを使用してエンティティをフィルター処理します。次に例を示します。11770、1059065 |
+| isExternal | boolean | eq | エンティティの所属。 次の値を指定できます。<br /><br />**true**:外部<br />**false**:内部<br />**null**:値なし |
 | domain | string | eq、neq、isset、isnotset | エンティティの関連ドメイン |
-| organization | string | eq、neq、isset、isnotset | 指定された組織単位でエンティティをフィルター処理する |
-| lastSeen | timestamp | lte、gte、 | 指定された日付の間に最後に見つかった範囲フィルターエンティティ |
-| status | string | eq、neq | 状態でエンティティをフィルター処理します。 指定できる値は、次のとおりです。<br /><br />**0**: N/A<br />**1**: ステージング済み<br />**2**: アクティブ<br />**3**: 中断<br />**4**: 削除されました |
-| score | 整数 (integer) | lt、gt、isset、isnotset | 調査の優先度スコアでエンティティをフィルター処理する |
+| organization | string | eq、neq、isset、isnotset | 指定した組織単位でエンティティをフィルター処理します |
+| lastSeen | timestamp | lte、gte、 | 指定した日付の間で最後に見つかったエンティティを範囲フィルター処理します |
+| 状態 | string | eq、neq | 状態でエンティティをフィルター処理します。 次の値を指定できます。<br /><br />**0**:該当なし<br />**1**:ステージング中<br />**2**:Active<br />**3**:Suspended<br />**4**:削除済み |
+| score | integer | lt、gt、isset、isnotset | エンティティを調査の優先順位スコアでフィルター処理する |
 
 [!INCLUDE [Open support ticket](includes/support.md)]
