@@ -1,6 +1,6 @@
 ---
-title: Cloud App Security が Workday 環境の保護にどのように役立つか
-description: この記事では、API コネクタを使用して Cloud App Security に Workday アプリを接続する利点について説明します。これにより、使用状況を表示したり制御したりできます。
+title: Cloud App Security は Workday 環境の保護にどのように役立つか
+description: この記事では、API コネクタを使用して Workday アプリを Cloud App Security に接続することで使用状況を可視化して制御することの利点について説明します。
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
@@ -9,53 +9,53 @@ ms.date: 12/04/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 9ee405188d0f338bfe43ca9a08730baa6054a844
 ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/04/2020
 ms.locfileid: "78274637"
 ---
-# <a name="how-cloud-app-security-helps-protect-your-workday-environment"></a>Cloud App Security が Workday 環境の保護にどのように役立つか
+# <a name="how-cloud-app-security-helps-protect-your-workday-environment"></a>Cloud App Security は Workday 環境の保護にどのように役立つか
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-主要な HCM ソリューションとして、Workday は従業員の個人データ、契約、ベンダーの詳細など、組織内の最も重要な情報の一部を保持します。 このデータの漏えいを防ぐには、悪意のあるアクターやセキュリティ非対応の insider が機密情報を盗み出すことがないように、継続的な監視を行う必要があります。
+Workday は主要な HCM ソリューションの 1 つであり、従業員の個人データ、契約、ベンダーの詳細など、組織内の最も機密性の高い情報の一部が保持されます。 このデータの漏えいを防ぐには、悪意のある当事者やセキュリティ認識の低い内部関係者が機密情報を持ち出すことがないように、継続的な監視を行う必要があります。
 
-Workday を Cloud App Security に接続すると、ユーザーのアクティビティに関する洞察が向上し、異常な動作の脅威の検出を行うことができます。
+Workday を Cloud App Security に接続すると、ユーザーのアクティビティに関してより深い分析情報が得られ、異常な動作に関する脅威の検出を行うことができます。
 
 ## <a name="main-threats"></a>主な脅威
 
-- 侵害されたアカウントと内部の脅威
+- 侵害されたアカウントと内部関係者の脅威
 - データ漏えい
-- セキュリティ意識の不足
-- 管理されていない独自のデバイスの持ち込む (BYOD)
+- セキュリティ認識の不足
+- アンマネージド Bring Your Own Device (BYOD)
 
-## <a name="how-cloud-app-security-helps-to-protect-your-environment"></a>Cloud App Security が環境の保護にどのように役立つか
+## <a name="how-cloud-app-security-helps-to-protect-your-environment"></a>Cloud App Security は環境の保護にどのように役立つのか
 
-- [クラウドの脅威、侵害されたアカウント、悪意のある内部関係者の検出](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
+- [クラウドの脅威、侵害されたアカウント、悪意のある内部関係者を検出する](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [フォレンジック調査のためにアクティビティの監査証跡を使用する](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## <a name="control-workday-with-built-in-policies-and-policy-templates"></a>組み込みのポリシーとポリシーテンプレートを使用して Workday を制御する
+## <a name="control-workday-with-built-in-policies-and-policy-templates"></a>組み込みのポリシーおよびポリシー テンプレートを使用して Workday を制御する
 
-次の組み込みポリシーテンプレートを使用して、潜在的な脅威についての検出と通知を行うことができます。
+次に示す組み込みポリシー テンプレートを使用すれば、潜在的な脅威を検出して、それについての通知が届くようにすることができます。
 
-| 種類 | Name |
+| Type | 名前 |
 | ---- | ---- |
-| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[疑わしい IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[不可能な移動](anomaly-detection-policy.md#impossible-travel) |
-| アクティビティポリシーテンプレート | 危険な IP アドレスからのログオン |
+| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[不審な IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[あり得ない移動](anomaly-detection-policy.md#impossible-travel) |
+| アクティビティ ポリシー テンプレート | 危険な IP アドレスからのログオン |
 
-ポリシーの作成の詳細については、「[ポリシーを作成する](control-cloud-apps-with-policies.md#create-a-policy)」を参照してください。
+ポリシー作成の詳細については、「[ポリシーの作成](control-cloud-apps-with-policies.md#create-a-policy)」を参照してください。
 
-## <a name="automate-governance-controls"></a>ガバナンスコントロールの自動化
+## <a name="automate-governance-controls"></a>ガバナンス コントロールを自動化する
 
-現在、Workday で使用できるガバナンスコントロールはありません。 このコネクタにガバナンスアクションを使用することに関心がある場合は、 [Cloud App Security チームのフィードバック](support-and-ts.md#feedback)を、必要なアクションの詳細と共に送信できます。
+現在、Workday で利用できるガバナンス コントロールはありません。 このコネクタにガバナンス アクションが必要な場合は、[Cloud App Security チームにフィードバック](support-and-ts.md#feedback)を、必要なアクションの詳細と共に送信することができます。
 
-アプリからの修復脅威の詳細については、「[接続されているアプリの管理](governance-actions.md)」を参照してください。
+アプリからの脅威の修復の詳細については、「[接続されているアプリを管理する](governance-actions.md)」を参照してください。
 
 ## <a name="protect-workday-in-real-time"></a>Workday をリアルタイムで保護する
 
-[外部ユーザーとのセキュリティ保護とコラボレーション](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)に関するベストプラクティスを確認し、[機密データのダウンロードをアンマネージまたは危険なデバイスにブロックして保護](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)します。
+[外部ユーザーをセキュリティで保護して共同作業を行う](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)ためのベスト プラクティス、および[アンマネージド デバイスまたは危険なデバイスへの機密データのダウンロードをブロックして保護する](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)ためのベスト プラクティスを確認してください。
 
-## <a name="next-steps"></a>次のステップ:
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [Workday を Microsoft Cloud App Security に接続する方法](connect-workday-to-microsoft-cloud-app-security.md)

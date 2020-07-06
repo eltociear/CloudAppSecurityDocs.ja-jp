@@ -1,6 +1,6 @@
 ---
-title: Cloud App Security によって G Suite 環境を保護する方法
-description: この記事では、API コネクタを使用して Cloud App Security に G Suite アプリを接続する利点について説明します。これにより、使用状況を表示したり制御したりすることができます。
+title: Cloud App Security は G Suite 環境の保護にどのように役立つか
+description: この記事では、API コネクタを使用して G Suite アプリを Cloud App Security に接続することで使用状況を可視化して制御することの利点について説明します。
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
@@ -9,65 +9,65 @@ ms.date: 12/04/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: b23a97ad5320edf0463f2ba26588e1122af66b47
 ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/19/2019
 ms.locfileid: "75190052"
 ---
-# <a name="how-cloud-app-security-helps-protect-your-g-suite-environment"></a>Cloud App Security によって G Suite 環境を保護する方法
+# <a name="how-cloud-app-security-helps-protect-your-g-suite-environment"></a>Cloud App Security は G Suite 環境の保護にどのように役立つか
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-クラウドファイルストレージおよびコラボレーションツールとして、G Suite を使用すると、ユーザーは組織やパートナー間でドキュメントを効率的かつ効率的な方法で共有できます。 G Suite を使用すると、内部的にだけでなく外部コラボレーターにも機密データが公開され、さらには共有リンク経由で公開されるようになります。 このようなインシデントは、悪意のあるアクターによって、または従業員を認識しないことによって発生します。 また、G Suite は、生産性を向上させるために、大規模なサードパーティ製のアプリのエコシステムも提供します。 これらのアプリを使用すると、悪意のあるアプリや過剰なアクセス許可を持つアプリを使用するリスクに組織をさらす可能性があります。
+クラウド ファイル ストレージおよびコラボレーション ツールである G Suite を使用すると、ユーザーは自分のドキュメントを組織全体でおよびパートナーとの間で合理的かつ効率的な方法で共有できます。 G Suite を使用すると、内部だけでなく外部のコラボレーターにもご利用の機密データが公開されたり、さらに悪いことに、共有リンクを介してそれが公開されたりする可能性があります。 このようなインシデントは、悪意のあるアクターによって、または不注意な従業員によって引き起こされる可能性があります。 また、G Suite には、生産性の向上に役立つサードパーティ製の大規模なアプリ エコシステムも用意されています。 これらのアプリを使用すると、悪意のあるアプリのリスクまたは過剰なアクセス許可を持つアプリを使用するリスクに組織がさらされる可能性があります。
 
-G Suite を Cloud App Security に接続すると、ユーザーのアクティビティに関する洞察が向上し、機械学習ベースの異常検出を使用した脅威検出、情報保護検出 (外部情報共有の検出など) が提供されます。自動修復制御を有効にし、組織内の有効なサードパーティ製アプリからの脅威を検出します。
+G Suite を Cloud App Security に接続すると、ユーザーのアクティビティに関するより深い分析情報が得られ、機械学習ベースの異常検出を使用した脅威検出、情報保護検出 (外部情報共有の検出など)、修復制御の自動化、組織内で有効にされたサードパーティ アプリからの脅威の検出を行えるようになります。
 
 ## <a name="main-threats"></a>主な脅威
 
-- 侵害されたアカウントと内部の脅威
+- 侵害されたアカウントと内部関係者の脅威
 - データ漏えい
-- セキュリティ意識の不足
+- セキュリティ認識の不足
 - 悪意のあるサードパーティ製アプリと Google アドオン
 - マルウェア
-- 攻撃
-- 管理されていない独自のデバイスの持ち込む (BYOD)
+- ランサムウェア
+- アンマネージド Bring Your Own Device (BYOD)
 
-## <a name="how-cloud-app-security-helps-to-protect-your-environment"></a>Cloud App Security が環境の保護にどのように役立つか
+## <a name="how-cloud-app-security-helps-to-protect-your-environment"></a>Cloud App Security は環境の保護にどのように役立つのか
 
-- [クラウドの脅威、侵害されたアカウント、悪意のある内部関係者の検出](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
+- [クラウドの脅威、侵害されたアカウント、悪意のある内部関係者を検出する](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [クラウドに格納されている規制対象の機密データを検出、分類、ラベル付け、保護する](best-practices.md#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 - [環境にアクセスできる OAuth アプリを検出して管理する](manage-app-permissions.md)
-- [クラウドに格納されているデータに DLP ポリシーとコンプライアンスポリシーを適用する](best-practices.md#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud)
-- [共有データの公開を制限し、コラボレーションポリシーを適用する](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
+- [クラウドに格納されているデータに DLP ポリシーとコンプライアンス ポリシーを適用する](best-practices.md#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud)
+- [共有データの公開を制限し、コラボレーション ポリシーを適用する](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [フォレンジック調査のためにアクティビティの監査証跡を使用する](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## <a name="control-g-suite-with-built-in-policies-and-policy-templates"></a>組み込みのポリシーとポリシーテンプレートを使用した G Suite の制御
+## <a name="control-g-suite-with-built-in-policies-and-policy-templates"></a>組み込みのポリシーおよびポリシー テンプレートを使用して G Suite を制御する
 
-次の組み込みポリシーテンプレートを使用して、潜在的な脅威についての検出と通知を行うことができます。
+次に示す組み込みポリシー テンプレートを使用すれば、潜在的な脅威を検出して、それについての通知が届くようにすることができます。
 
-| 種類 | 名前 |
+| Type | 名前 |
 | ---- | ---- |
-| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[不審な IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[あり得ない移動](anomaly-detection-policy.md#impossible-travel)<br />[終了したユーザーによって実行されるアクティビティ](anomaly-detection-policy.md#activity-performed-by-terminated-user)(AAD は IdP として必要)<br />[マルウェアの検出](anomaly-detection-policy.md#malware-detection)<br />[複数回失敗したログイン試行](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[ランサムウェアの検出](anomaly-detection-policy.md#ransomware-activity)<br />[通常とは異なる管理アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[異常なファイル削除アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なるファイル共有アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なる複数ファイルのダウンロードアクティビティ](anomaly-detection-policy.md#unusual-activities-by-user) |
-| アクティビティポリシーテンプレート | Logon from a risky IP address (危険な IP アドレスからのログオン)<br />Mass download by a single user (1 人のユーザーによる大量ダウンロード)<br />ランサムウェア アクティビティの可能性 |
-| ファイルポリシーテンプレート | 承認されていないドメインで共有されているファイルを検出する<br />個人用電子メールアドレスで共有されるファイルを検出する<br />PII/PCI/PHI を使用したファイルの検出 |
+| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[不審な IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[あり得ない移動](anomaly-detection-policy.md#impossible-travel)<br />[終了させられたユーザーによって実行されるアクティビティ (IdP として AAD が必要)](anomaly-detection-policy.md#activity-performed-by-terminated-user)<br />[マルウェアの検出](anomaly-detection-policy.md#malware-detection)<br />[複数回失敗したログイン試行](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[ランサムウェアの検出](anomaly-detection-policy.md#ransomware-activity)<br />[通常とは異なる管理アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[異常なファイル削除アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[異常なファイル共有アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なる複数ファイルのダウンロード アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user) |
+| アクティビティ ポリシー テンプレート | 危険な IP アドレスからのログオン<br />単独のユーザーによる大量ダウンロード<br />ランサムウェアの可能性があるアクティビティ |
+| ファイル ポリシー テンプレート | 承認されていないドメインで共有されたファイルを検出<br />個人用メール アドレスで共有されたファイルを検出<br />PII/PCI/PHI を使用したファイルを検出 |
 
-ポリシーの作成の詳細については、「[ポリシーを作成する](control-cloud-apps-with-policies.md#create-a-policy)」を参照してください。
+ポリシー作成の詳細については、「[ポリシーの作成](control-cloud-apps-with-policies.md#create-a-policy)」を参照してください。
 
-## <a name="automate-governance-controls"></a>ガバナンスコントロールの自動化
+## <a name="automate-governance-controls"></a>ガバナンス コントロールを自動化する
 
-潜在的な脅威を監視するだけでなく、次の G Suite ガバナンスアクションを適用して自動化し、検出された脅威を修復できます。
+潜在的な脅威を監視することに加えて、次の G Suite ガバナンス アクションを適用および自動化することにより、検出された脅威を修復することができます。
 
-| 種類 | 操作 |
+| Type | 操作 |
 | ---- | ---- |
-| データガバナンス | -分類ラベルを適用 Azure Information Protection<br />-ドメインに読み取りアクセス許可を付与します<br />-Google ドライブにプライベートファイル/フォルダーを作成します。<br />-ファイル/フォルダーへのパブリックアクセスを減らす<br />-ファイルからコラボレーターを削除します<br />-Azure Information Protection 分類ラベルを削除します<br />-ファイル/フォルダーの外部コラボレーターを削除します<br />-ファイルエディターによる共有機能の削除<br />-ファイル/フォルダーへのパブリックアクセスを削除します。<br />-ユーザーが Google にパスワードをリセットする必要があります<br />-DLP 違反ダイジェストをファイル所有者に送信する<br />-最後のファイルエディターに DLP 違反を送信します<br />-ファイルの所有権の転送<br />-ごみ箱ファイル |
-| ユーザーガバナンス | -ユーザーの中断<br />-警告をユーザーに通知する (Azure AD 経由)<br />-ユーザーにもう一度サインインするように要求します (Azure AD 経由)<br />-ユーザーの中断 (Azure AD 経由) |
-| OAuth アプリガバナンス | -OAuth アプリのアクセス許可を取り消す |
+| データ ガバナンス | - Azure Information Protection 分類ラベルを適用する<br />- ドメインに読み取りアクセス許可を付与する<br />- Google ドライブ内のファイル、フォルダーを非公開にする<br />- ファイル、フォルダーへのパブリック アクセスを削減する<br />- コラボレーターをファイルから削除する<br />- Azure Information Protection 分類ラベルを削除する<br />- ファイル、フォルダー上の外部コラボレーターを削除する<br />- ファイル エディターの共有機能を削除する<br />- ファイル、フォルダーへのパブリック アクセスを削除する<br />- Google へのパスワードのリセットをユーザーに求める<br />- DLP 違反ダイジェストをファイル所有者に送信する<br />- 最後のファイル エディターに DLP 違反を送信する<br />- ファイル所有権を移転する<br />- ファイルをごみ箱に入れる |
+| ユーザー ガバナンス | - ユーザーを停止する<br />- アラートをユーザーに通知する (Azure AD 経由)<br />- ユーザーにもう一度サインインするよう要求する (Azure AD 経由)<br />- ユーザーを停止する (Azure AD 経由) |
+| OAuth アプリのガバナンス | - OAuth アプリのアクセス許可を取り消す |
 
-アプリからの修復脅威の詳細については、「[接続されているアプリの管理](governance-actions.md)」を参照してください。
+アプリからの脅威の修復の詳細については、「[接続されているアプリを管理する](governance-actions.md)」を参照してください。
 
 ## <a name="protect-g-suite-in-real-time"></a>G Suite をリアルタイムで保護する
 
-[外部ユーザーとのセキュリティ保護とコラボレーション](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)に関するベストプラクティスを確認し、[機密データのダウンロードをアンマネージまたは危険なデバイスにブロックして保護](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)します。
+[外部ユーザーをセキュリティで保護して共同作業を行う](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)ためのベスト プラクティス、および[アンマネージド デバイスまたは危険なデバイスへの機密データのダウンロードをブロックして保護する](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)ためのベスト プラクティスを確認してください。
 
 ## <a name="next-steps"></a>次のステップ
 

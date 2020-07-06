@@ -1,6 +1,6 @@
 ---
-title: よく寄せられる質問 - Cloud App Security | Microsoft ドキュメント
-description: この記事では、Cloud App Security に関するよく寄せられる質問と回答を示します。
+title: よく寄せられる質問 - Cloud App Security | Microsoft Docs
+description: この記事では、Cloud App Security についてよく寄せられる質問とその回答について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -16,20 +16,20 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 043615ccdde609f77f6804ee9040e1df55a321f4
 ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/05/2019
 ms.locfileid: "74719861"
 ---
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-この記事では、Cloud App Security に関するよく寄せられる質問と回答を示します。
+この記事では、Cloud App Security についてよく寄せられる質問とその回答について説明します。
 
-## <a name="what-kind-of-permissions-do-i-need-to-access-cloud-app-security"></a>Cloud App Security にアクセスするには、どのようなアクセス許可が必要ですか?
+## <a name="what-kind-of-permissions-do-i-need-to-access-cloud-app-security"></a>Cloud App Security にアクセスするには、どの種類のアクセス許可が必要ですか?
 
-Azure Active Directory での全体管理者、コンプライアンス管理者、またはセキュリティ管理者である必要があります。 Office 365 セキュリティ/コンプライアンス センターでこれらのロールを持っているだけでは十分ではありません。 Azure Active Directory でユーザーを全体管理者、コンプライアンス管理者、またはセキュリティ管理者として設定するには、PowerShell を使用できます。 次のコマンドレットを実行します。
+Azure Active Directory のグローバル管理者、コンプライアンス管理者、またはセキュリティ管理者である必要があります。 これらのロールを、Office 365 セキュリティ/コンプライアンス センターで持っているだけでは不十分です。 PowerShell を使用して、ユーザーを Azure Active Directory のグローバル管理者、コンプライアンス管理者、またはセキュリティ管理者に設定できます。 次のコマンドレットを実行します。
 
 ```powershell
 
@@ -46,6 +46,6 @@ Azure Active Directory での全体管理者、コンプライアンス管理者
 
 ## <a name="next-steps"></a>次のステップ
 
-クラウド アプリの使用を制御するポリシーを設定して使用する方法については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」をご覧ください。
+クラウド アプリの使用の制御に、ポリシーを設定して使用する方法については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」を参照してください。
 
 [!INCLUDE [Open support ticket](includes/support.md)]

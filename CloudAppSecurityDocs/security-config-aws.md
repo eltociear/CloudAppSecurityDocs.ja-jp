@@ -1,6 +1,6 @@
 ---
-title: Cloud App Security AWS | のセキュリティ構成に関する推奨事項を取得するMicrosoft Docs
-description: この記事では、アマゾンウェブサービスと統合することによって Cloud App Security のセキュリティ構成の推奨事項を取得する方法について説明します。
+title: AWS のセキュリティ構成に関する推奨事項を取得する - Cloud App Security | Microsoft Docs
+description: この記事では、アマゾン ウェブ サービスと統合することによって Cloud App Security のセキュリティ構成に関する推奨事項を取得する方法について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -16,35 +16,35 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: fa4fe701de12753d754f0b5dcc9605a1ea4d0ac8
 ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/05/2019
 ms.locfileid: "74721033"
 ---
 # <a name="security-configuration-for-aws"></a>AWS のセキュリティ構成
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-Microsoft Cloud App Security は、アマゾンウェブサービス環境のセキュリティ構成評価を提供します。 この評価では、AWS の Internet Security (CI) のベンチマークに基づいて、基本的なセキュリティの推奨事項を提供します。
+Microsoft Cloud App Security では、お客様のアマゾン ウェブ サービス環境のセキュリティ構成の評価を得ることができます。 この評価では、AWS の Center for Internet Security (CIS) ベンチマークに基づく基本的なセキュリティに関する推奨事項が提供されます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
-- AWS Security Hub は、すべての AWS アカウントリージョンに対して設定する必要があります。 詳細については、「 [AWS Security Hub](https://go.microsoft.com/fwlink/?linkid=2100208)のセットアップ」を参照してください。
+- AWS Security Hub は、すべての AWS アカウント リージョンに対して設定する必要があります。 詳細については、「[AWS Security Hub のセットアップ](https://go.microsoft.com/fwlink/?linkid=2100208)」を参照してください。
     > [!NOTE]
-    > 初めてセキュリティハブを有効にする場合、初期データが使用可能になるまでに数時間かかることがあります。
-- アマゾンウェブサービスが Cloud App Security に接続されている必要があります。 詳細については、「 [CONNECT AWS to Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md)」を参照してください。
+    > 初めて Security Hub を有効にする場合、初期データが使用可能になるまでに数時間かかることがあります。
+- ご自分のアマゾン ウェブ サービスが Cloud App Security に接続されている必要があります。 詳細については、「[AWS を Microsoft Cloud App Security に接続する](connect-aws-to-microsoft-cloud-app-security.md)」を参照してください。
 
 ## <a name="how-to-view-aws-security-recommendation"></a>AWS のセキュリティに関する推奨事項を表示する方法
 
-1. Cloud App Security で、を参照して > **セキュリティ構成**を**調査**し、 **[アマゾンウェブサービス]** タブを選択します。
-    - Microsoft Cloud App Security が提供するのは、上位 50 個のサブスクリプションに向けた推奨事項のみです。
-    - 変更が有効になるまでに、最大 15 分かかる場合があります。
+1. Cloud App Security で、 **[調査]**  >  **[セキュリティの構成]** の順に参照し、 **[アマゾン ウェブ サービス]** タブを選択します。
+    - Microsoft Cloud App Security では、上位 50 件のサブスクリプションに対してのみ、推奨事項が提供されます。
+    - 変更が有効になるまでに最大 15 分かかる場合があります。
 
-    ![セキュリティ構成メニュー](media/security-configuration-menu.png)
+    ![セキュリティの構成メニュー](media/security-configuration-menu.png)
 
-1. 種類、リソース、およびアカウントごとに、推奨事項をフィルター処理できます。 さらに、Azure Security Center でセキュリティ構成のアイコン ![ASC アイコン](media/asc-icon.png) 詳細については、「Amazon Security Hub (推奨事項)」を参照してください。
+1. 推奨事項は、種類、リソース、アカウントごとにフィルター処理できます。 また、[セキュリティの構成] アイコン ![ASC アイコン](media/asc-icon.png) をクリックして Amazon Security Hub で推奨事項を開いて詳細情報を確認し、推奨事項についてさらに詳しく調べることができます。
 
-    ![セキュリティ構成](media/security-configuration-aws.png)
+    ![セキュリティの構成](media/security-configuration-aws.png)
 
 ## <a name="next-steps"></a>次のステップ
 
