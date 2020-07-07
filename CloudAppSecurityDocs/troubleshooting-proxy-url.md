@@ -11,12 +11,11 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 9759be6e7c6cddd1b3140fd00bd19834c235352b
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
-ms.translationtype: HT
+ms.openlocfilehash: bd4becdf1d2f7cbeb7dff529302405b19881cc3a
+ms.sourcegitcommit: 9395620dfc916b0954207c4fe26f58c76cdfe0d0
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250606"
+ms.lasthandoff: 07/05/2020
+ms.locfileid: "85953676"
 ---
 # <a name="troubleshooting---what-is-casms-mcasms-or-mcas-govus"></a>トラブルシューティング - `*.cas.ms`、`*.mcas.ms`、または `*.mcas-gov.us` とは
 
@@ -41,6 +40,7 @@ Fabrikam は実際には Cloud App Security を使用していませんが、Con
 > - `*.rs2-mcas.ms`
 > - `*.admin-mcas.ms`
 > - `*.mcas.ms`
+> - `*.admin-mcas-gov.us`
 
 ## <a name="heres-why-you-see-casms-mcasms-or-mcas-govus-in-your-url"></a>URL に `*.cas.ms`、`*.mcas.ms`、または `*.mcas-gov.us` が表示される理由
 

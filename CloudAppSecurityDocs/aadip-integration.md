@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,11 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f5603102aa393c676b82fc179094526933e93f68
-ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
-ms.translationtype: HT
+ms.openlocfilehash: 13e1260fd86a4b252e56e43917fdd84fc67ebc01
+ms.sourcegitcommit: 7811a0d33e1756782222f20df02acae2f3ea4afe
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295783"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85795789"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Azure Active Directory Identity Protection の統合
 
