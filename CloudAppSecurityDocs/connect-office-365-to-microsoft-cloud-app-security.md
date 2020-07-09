@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 74b03bd9db046a7637ea84d69914d1e87b47c2ae
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: 98039cf5bf28516180fb788082643d656a566d17
+ms.sourcegitcommit: 5ea18a81e5fffacf81cda6eb545ed95d822426da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285496"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85846040"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Office 365 を Microsoft Cloud App Security に接続する
 
@@ -61,6 +61,7 @@ Cloud App Security では、次の Office 365 アプリがサポートされて�
 >- Dynamics 365 のログを取得するには、[Dynamics 365 で監査を有効にする](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing)必要があります。 監査を有効にすると、Cloud App Security ではログの取得が開始されます (24 - 72 時間の遅延があります)。
 >- Active Directory オンプレミス環境のユーザーと自動的に同期するように Azure Active Directory が設定されている場合、オンプレミス環境の設定により Azure AD 設定がオーバーライドされ、 **[ユーザーの停止]** ガバナンス アクションの使用が元に戻されます。
 >- Azure AD サインイン アクティビティの場合、Cloud App Security には、対話型のサインイン アクティビティと、ActiveSync などのレガシ プロトコルからのサインイン アクティビティのみが表示されます。 非対話型のサインイン アクティビティは、Azure AD 監査ログで確認できます。
+> - [Multi-Geo の展開](/office365/enterprise/office-365-multi-geo)は、OneDrive でのみサポートされています。
 
 1. **[接続されているアプリ]** ページで [+] ボタンをクリックし、 **[Office 365]** を選択します。
 

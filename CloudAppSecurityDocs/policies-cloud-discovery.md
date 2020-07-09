@@ -1,5 +1,5 @@
 ---
-title: Cloud Discovery ポリシー - Cloud App Security | Microsoft Docs
+title: Cloud Discovery ポリシー - Cloud App Security
 description: この記事では、Cloud App Security で多数の Cloud Discovery ポリシーを構成する手順の概要について説明します。
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 58208567133bf9c8257e456a415c60ab3dacee0b
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f76e77edff81d8104ecafa3ba03d146400a86dea
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719198"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624915"
 ---
 # <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
 

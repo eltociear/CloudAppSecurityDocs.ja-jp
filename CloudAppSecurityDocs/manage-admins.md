@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: face06e83dc57a3722298bf2e22846334ca811b2
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: ed9b4a8b34f0a6b0d4e0ecab3977c97cf0ec1491
+ms.sourcegitcommit: 5ea18a81e5fffacf81cda6eb545ed95d822426da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566826"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85846020"
 ---
 # <a name="manage-admin-access"></a>管理者アクセスを管理する
 
@@ -121,9 +121,6 @@ Azure Active Directory または Office 365 からの管理者のアクセス許
 
 2. Cloud App Security へのアクセス権を持つ管理者を追加するには、プラス記号をクリックします。 内部または外部のメール アドレスを入力して、管理者が組織内または外部のマネージド セキュリティ サービス プロバイダー (MSSP) から、セキュリティ アラートを管理できるようにすることができます。
 
-    > [!NOTE]
-    > ポータルへのアクセスを MSSP に許可するには、MSSP ユーザーをゲスト ユーザーとして Azure AD に追加する必要があります。 詳細については、[Azure portal での Azure Active Directory B2B コラボレーション ユーザーの追加](/azure/active-directory/b2b/add-users-administrator)に関する記事を参照してください。
-
     ![管理者を追加する](media/add-admin.png)
 
 3. 次に、ドロップダウンをクリックして、管理者が持つロールの種類 ( **[全体管理者]** 、 **[セキュリティ閲覧者]** 、 **[コンプライアンス管理者]** 、または **[アプリ/インスタンス管理者]** ) を設定します。 **[アプリ/インスタンス管理者]** を選択する場合は、管理者がアクセス許可を持つ対象のアプリとインスタンスを選択します。
@@ -147,7 +144,7 @@ Cloud App Security では、管理者のサインイン アクティビティの
 
 ## <a name="invite-external-admins"></a>外部の管理者を招待する
 
-Cloud App Security を使用すると、外部のマネージド セキュリティ サービス プロバイダー (MSSP) を Cloud App Security ポータルの管理者として招待することができます。 外部ユーザーを管理者として構成し、Cloud App Security で使用可能な任意のロールを割り当てることができます。 外部ユーザーを追加するには、「[管理者をさらに追加する](#add-additional-admins)」の手順で、外部のメール アドレスを指定します。
+Cloud App Security を使用すると、外部のマネージド セキュリティ サービス プロバイダー (MSSP) を Cloud App Security ポータルの管理者として招待することができます。 外部ユーザーを管理者として構成し、Cloud App Security で使用可能な任意のロールを割り当てることができます。 外部ユーザーを追加するには、ソース テナントで Cloud App Security が有効になっていることを確認し、「[管理者をさらに追加する](#add-additional-admins)」の手順で外部の電子メール アドレスを指定します。
 
 さらに、MSSP で複数の顧客テナントにサービスを提供できるようにするため、複数のテナントへのアクセス権を持つ管理者は、ポータル内でテナントを簡単に切り替えることができます。 テナントを切り替えるには、複数のテナントに対するアクセス許可を付与された後、ユーザー アイコンをクリックします。 自分がアクセス許可を持っているテナントの一覧が表示されます。 管理するテナントを選択します。
 

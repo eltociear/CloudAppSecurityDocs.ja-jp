@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/24/2019
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b2106faed750a2eba06ae505a6d7d9cf17ca1be
-ms.sourcegitcommit: f8d170b0da8e8d7f723ddc9e845595f64dc79a02
+ms.openlocfilehash: 3c0bb1f5a3ff0241067d23bd455865d40c29c652
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85323765"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624823"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Defender Advanced Threat Protection と Microsoft Cloud App Security の統合
 
@@ -54,6 +54,8 @@ Cloud App Security 自体では、[ユーザーがアップロードしたログ
 
 他のプラットフォームで Cloud Discovery を実行できるようにするには、Cloud App Security の[ログ コレクター](discovery-docker.md)と、Windows 10 コンピューターを監視するための Microsoft Defender ATP 統合の両方を使用することをお勧めします。
 
+Microsoft Defender ATP と Cloud App Security を使用する利点を示す、[こちらの動画をご覧ください](#related-videos)。
+
 ## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>Microsoft Defender ATP と Cloud App Security を統合する方法
 
 Cloud App Security との Microsoft Defender ATP 統合を有効にするには:
@@ -81,10 +83,11 @@ Microsoft Defender ATP と Cloud App Security を統合した後は、Cloud Disc
 5. 一覧に表示されている各コンピューターにドリルダウンし、そのタブを使用して調査データを表示できます。 インシデントに関係していたコンピューター、ユーザー、IP アドレス、アプリ間の相関関係を見つけます。
 
     - **概要**
-        - トランザクション: 選択した期間にコンピューターで発生したトランザクションの数に関する情報。
-        - 合計トラフィック: 選択した期間のトラフィックの総量 (MB 単位) に関する情報。
+        - **マシンのリスク レベル**:コンピューターのプロファイルが組織内の他のコンピューターと比較してどの程度危険か示します。これは重大度 (高、中、低、情報) で示されます。 Cloud App Security では、高度な分析に基づき、Microsoft Defender ATP からのコンピューター プロファイルがコンピューターごとに使用されます。 あるコンピューターのベースラインに対して異常なアクティビティが評価され、マシンのリスク レベルが決定されます。 マシンのリスク レベルを使用し、先に調査するコンピューターを決定します。
+        - **トランザクション**:選択した期間にコンピューターで発生したトランザクションの数に関する情報。
+        - **合計トラフィック**:選択した期間のトラフィックの総量 (MB 単位) に関する情報。
         - アップロード: 選択した期間にコンピューターによってアップロードされたトラフィックの総量 (MB 単位) に関する情報。
-        - ダウンロード: 選択した期間にコンピューターによってダウンロードされたトラフィックの総量 (MB 単位) に関する情報。
+        - **ダウンロード**:選択した期間にコンピューターによってダウンロードされたトラフィックの総量 (MB 単位) に関する情報。
     - **検出されたアプリ**  
   コンピューターによってアクセスされた、すべての検出されたアプリの一覧が表示されます。
     - **ユーザーの履歴**  
@@ -144,6 +147,9 @@ Cloud App Security で**承認されていない**としてマークされたア
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 ## <a name="related-videos"></a>関連ビデオ
+
+> [!div class="nextstepaction"]
+> [Microsoft Defender ATP を使用してシャドウ IT を検出し、ブロックする](https://www.youtube.com/watch?v=MsHkTOoqSQo)
 
 > [!div class="nextstepaction"]
 > [企業ネットワークを超えたシャドウ IT の検出](https://www.youtube.com/watch?v=f8hbvbY1Hnc)

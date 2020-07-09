@@ -1,17 +1,17 @@
 ---
-title: エンドポイントの修復までガバナンスを拡張する | Microsoft Docs
+title: エンドポイントの修復までガバナンスを拡張する
 description: このチュートリアルでは、Microsoft Power Automate ワークフローをトリガーして Microsoft Defender Advanced Threat Protection 修復アクションを実行するために、Microsoft Cloud App Security ポリシー アラートを構成するプロセスについて説明します。
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 04/27/2020
-ms.openlocfilehash: 689b40482c4064add4edc4a05d2dbcd768ccf53c
-ms.sourcegitcommit: 4e2b905c8770d411df68372c29154d30b2cf195e
+ms.openlocfilehash: 2f06ed5a9eb5b029367b1ff05231b5a35fcc6d19
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2020
-ms.locfileid: "85123362"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624999"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>チュートリアル:エンドポイントの修復までガバナンスを拡張する
 
@@ -47,7 +47,7 @@ Power Automate プランがない場合は、[無料試用版アカウントに�
 1. Cloud App Security のメニュー バーで設定の歯車 ![設定アイコン](media/settings-icon.png "設定アイコン") をクリックし、 **[セキュリティ拡張機能]** を選択します。
 
 1. **[セキュリティ拡張機能]** ページで [+] ボタンをクリックして新しい API トークンを生成します。
-1. **[新しいトークンの生成]** ポップアップ ウィンドウに、トークン名 (たとえば "Flow-Token") を入力し、 **[生成]** をクリックします。
+1. **[新しいトークンの生成]** ポップアップに、トークン名 (たとえば "Flow-Token") を入力し、 **[生成]** をクリックします。
 
     ![名前入力と [生成] ボタンを示すトークンのウィンドウのスクリーンショット。](media/tutorial-flow-token-generate.png)
 1. トークンが生成されたら、生成されたトークンの右側にあるコピー アイコンをクリックして、 **[閉じる]** をクリックします。 このトークンは後で必要になります。
@@ -80,13 +80,13 @@ Power Automate プランがない場合は、[無料試用版アカウントに�
 
     ![Cloud App Security の作成ボタンを示す Power Automate のテンプレート ページのスクリーンショット。](media/tutorial-flow-templates-create.png)
 
-1. **Cloud App Security** のポップアップ ウィンドウで、接続名 (たとえば "Cloud App Security トークン") を入力し、コピーした API トークンを貼り付けて、 **[作成]** をクリックします。
+1. **Cloud App Security** のポップアップで、接続名 (たとえば "Cloud App Security トークン") を入力し、コピーした API トークンを貼り付けて、 **[作成]** をクリックします。
 
     ![名前とキーが入力された、[作成] ボタンがある [Cloud App Security] ウィンドウのスクリーンショット。](media/tutorial-flow-templates-create-window.png)
 
 1. アプリの一覧で、 **[Azure AD を使用する HTTP]** が表示されている行で、 **[サインイン]** をクリックします。
 
-1. **[Azure AD を使用する HTTP]** のポップアップ ウィンドウで **[基本リソース URL]** と **[Azure AD リソース URI]** の両方のフィールドに「`https://graph.microsoft.com`」を入力し、 **[サインイン]** をクリックして、Azure AD コネクタを使用した HTTP で使用する管理者の資格情報を入力します。
+1. **[Azure AD を使用する HTTP]** のポップアップで **[基本リソース URL]** と **[Azure AD リソース URI]** の両方のフィールドに「`https://graph.microsoft.com`」を入力し、 **[サインイン]** をクリックして、Azure AD コネクタを使用した HTTP で使用する管理者の資格情報を入力します。
 
     ![リソースのフィールドと [サインイン] ボタンがある [Azure AD を使用する HTTP] ウィンドウのスクリーンショット。](media/tutorial-flow-templates-azure.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Cloud Discovery をデプロイする - Cloud App Security | Microsoft Docs
+title: Cloud Discovery をデプロイする - Cloud App Security
 description: この記事では、Cloud Discovery を動作させるためのセットアップ手順について説明します。
 author: shsagir
 ms.author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ca5d9d10b9c2270e3f8a8b391a42a8e2344a7aa7
-ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
+ms.openlocfilehash: 14d8789d4be3aac4199470e8ae60f5505b4fae3b
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84801169"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624971"
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery の設定
 

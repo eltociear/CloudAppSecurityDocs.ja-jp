@@ -1,5 +1,5 @@
 ---
-title: Cloud Discovery エラーのトラブルシューティング - Cloud App Security | Microsoft Docs
+title: Cloud Discovery エラーのトラブルシューティング - Cloud App Security
 description: この記事では、Cloud Discovery の頻繁なエラーと、それぞれの推奨される解決策の一覧を示します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ea537c11bfb94f8f33f467ca04b5d797a3821635
-ms.sourcegitcommit: 94f36e81067f05f841bec25bc31dd8983fde18f9
+ms.openlocfilehash: 5d4bff251e40954e6505c9f1633a927366d78df6
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80675474"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624832"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Cloud Discovery のトラブルシューティング
 

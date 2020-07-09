@@ -1,5 +1,5 @@
 ---
-title: アプリ コネクタのエラー メッセージのトラブルシューティング - Cloud App Security | Microsoft Docs
+title: アプリ コネクタのエラー メッセージのトラブルシューティング - Cloud App Security
 description: この記事では、API アプリ コネクタのエラー メッセージの一覧と、それぞれの推奨される解決策について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01cc9153a2d93a9a565750e1d0c6d41b2f72163f
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: 136950e683308bbea34a259477036ec0cfbbea72
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912079"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624844"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>エラー メッセージを使用したアプリ コネクタのトラブルシューティング
 

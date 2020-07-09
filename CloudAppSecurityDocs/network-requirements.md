@@ -1,5 +1,5 @@
 ---
-title: ネットワークの要件 - Cloud App Security | Microsoft Docs
+title: ネットワークの要件 - Cloud App Security
 description: この記事では、Cloud App Security を使用するために開く必要がある IP アドレスとポートについて説明します。
 keywords: ''
 author: shsagir
@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 780e208fc781b413b424c8809de6e1f50611ec92
-ms.sourcegitcommit: 165225f48f89dc438110f463587722c251402ef8
+ms.openlocfilehash: 047f922f7040e06d740d8d75e37dd54774b5acb7
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84482106"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624951"
 ---
 # <a name="network-requirements"></a>ネットワークの要件
 
