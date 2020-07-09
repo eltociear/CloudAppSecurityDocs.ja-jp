@@ -27,7 +27,7 @@
   items:
     - name: シャドウ IT の検出と管理
       href: tutorial-shadow-it.md
-    - name: 疑わしいアクティビティを検出して管理する
+    - name: UEBA を使用して疑わしいユーザー アクティビティを検出する
       href: tutorial-suspicious-activity.md
     - name: 危険性の高いユーザーを調査する
       href: tutorial-ueba.md
