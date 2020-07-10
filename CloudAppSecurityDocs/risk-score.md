@@ -1,5 +1,5 @@
 ---
-title: リスク スコアの操作 - Cloud App Security | Microsoft Docs
+title: リスク スコアの操作 - Cloud App Security
 description: この記事では、Cloud App Security アプリのリスク スコアを使用およびカスタマイズする方法について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b69c92be4a3e095b76eee3d458820dac5d218a9
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: d3d292f7bedfdfd9d4569bb357b5c0dcaf48c69f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250691"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85625096"
 ---
 # <a name="working-with-app-risk-scores"></a>アプリのリスク スコアの操作
 
@@ -45,7 +45,7 @@ ms.locfileid: "84250691"
 1. **[クラウド アプリ カタログ]** ページの **[カテゴリ別に参照]** で **[CRM]** を選択します。
 2. **[詳細]** フィルターを使用し、 **[コンプライアンス リスク要因]** の **[SOC 2]** の [が次と等しい] を **[True]\(はい\)** に設定します。
 3. **[コンプライアンス リスク要因]** の **[ISO 27001]** の [が次と等しい] を **[True]\(はい\)** に設定します。
-4. **[セキュリティ リスク要因]** の **[保存データの暗号化]** で、[が次に等しくない]、 **[Not supported, N/A]\(サポートされない、該当なし\)** **** を選択します。
+4. **[セキュリティ リスク要因]** の **[保存データの暗号化]** で、[が次に等しくない]、 **[Not supported, N/A]** \ **(サポートされない、該当なし\)** を選択します。
 5. **[コンプライアンス リスク要因]** の **[管理者監査証跡]** の [が次と等しい] を **[True]\(はい\)** に設定します。
 6. **[コンプライアンス リスク要因]** の **[ユーザー監査証跡]** の [が次と等しい] を **[True]\(はい\)** に設定します。
 
