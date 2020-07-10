@@ -1,5 +1,5 @@
 ---
-title: クラウド アプリのリスクと不審なアクティビティを調査する - Cloud App Security | Microsoft Docs
+title: クラウド アプリのリスクと不審なアクティビティを調査する - Cloud App Security
 description: この記事では、Cloud App Security を使用して、アラート、問題、および不審なアクティビティを調査するプロセスの概要を示します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a4ea4e8e49cd2787a2c571cd8bbc9bc8f438e72b
-ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
+ms.openlocfilehash: ffbc154ab8f18a929dcdc1521c56dd236a9886b3
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84486325"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624679"
 ---
 # <a name="investigate"></a>調査
 

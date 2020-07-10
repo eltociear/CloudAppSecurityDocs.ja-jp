@@ -1,5 +1,5 @@
 ---
-title: IP 範囲とタグを設定する - Cloud App Security | Microsoft Docs
+title: IP 範囲とタグを設定する - Cloud App Security
 description: この記事では、IP タグと IP カテゴリを使用する手順について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c26c5cea5a366220c5f8fdff030db1240a7e1a73
-ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
+ms.openlocfilehash: 02b3ebfdb6def927e7f3bde55fe76ef74e65406b
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77566938"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624631"
 ---
 #  <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a>IP 範囲とタグの使用
 

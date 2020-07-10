@@ -1,11 +1,11 @@
 ---
-title: アプリを接続して使用状況を表示および管理する - Cloud App Security | Microsoft Docs
+title: アプリを接続して可視化および管理する - Cloud App Security
 description: この記事では、API コネクタを使用して、アプリを組織のクラウド内のアプリに接続するプロセスについて説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c12226c36cba270ad5b54ffdb76cb8b228c2480
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 5c48fff030c1f008d9361796eafe4ba49b8b0b82
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83854215"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624543"
 ---
 # <a name="connect-apps"></a>アプリを接続する
 
@@ -100,6 +100,7 @@ Cloud App Security はシステム管理者権限で展開されているため�
 | AWS | | 新しく作成されたユーザー |
 | ボックス | Enterprise | 管理者として Box に接続することを強くお勧めします。共同管理者として接続すると、部分的なデータしか表示されません。 共同管理者として接続する場合は、すべての権限を選択してください。 |
 | ドロップボックス | Business/Enterprise | 管理者 |
+| GitHub | GitHub Enterprise Cloud | Owner |
 | GCP | | [GCP 接続の前提条件](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites)に関するページを参照してください |
 | G Suite | G Suite Business または Enterprise (推奨)<br /><br />G Suite Enterprise (最低必要) | スーパー管理者 |
 | Office 365 | | グローバル管理者 |
@@ -114,6 +115,15 @@ Cloud App Security はシステム管理者権限で展開されているため�
 Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) に完全に統合されます。 検出ログのアップロードを含む、Cloud App Security アプリとのすべての通信、および Cloud App Security に送信されるトラフィックは、ExpressRoute の**パブリック ピアリング**経由でルーティングされるため、待機時間、パフォーマンス、およびセキュリティが改善されます。 お客様側で設定を行う必要はありません。
 パブリック ピアリングの詳細については、「[ExpressRoute 回線とルーティング ドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)」を参照してください。
 
+## <a name="disable-app-connectors"></a>アプリ コネクタを無効にする
+
+接続されているアプリを無効にするには
+
+1. **[接続されているアプリ]** ページで、関連する行の 3 つのドットをクリックし、 **[Disable App connector]\(アプリ コネクタを無効にする\)** を選択します。
+1. ポップアップで、 **[Disable App connector instance]\(アプリ コネクタ インスタンスを無効にする\)** をクリックして、操作の確認を行います。
+
+無効にすると、コネクタ インスタンスによって、そのコネクタからのデータの使用が停止されます。
+
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
@@ -124,4 +134,4 @@ Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.micr
 ## <a name="check-out-this-video"></a>こちらのビデオをご覧ください。
 
 > [!div class="nextstepaction"]
-> [Microsoft Cloud App Security – REST API とトークン](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+> [Microsoft Cloud App Security - REST API とトークン](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

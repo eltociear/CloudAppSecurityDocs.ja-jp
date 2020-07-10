@@ -1,5 +1,5 @@
 ---
-title: 検出されたアプリのブロック - Cloud App Security | Microsoft Docs
+title: 検出されたアプリのブロック - Cloud App Security
 description: この記事では、検出されたアプリのブロック スクリプトをエクスポートする手順について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a8cd5232ceaa08ed6d4446edf025cffe06787dfd
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 1c0df9e769608b2ca66de5b7a8889bfd648795a9
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241255"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624580"
 ---
 # <a name="govern-discovered-apps"></a>検出されたアプリの管理
 

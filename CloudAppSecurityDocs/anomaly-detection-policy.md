@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85cf523e8cc733156c2365da114cc893b022e1e3
-ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
+ms.openlocfilehash: d5ebc12c77fa8e2a9b3b1ccb006493a02771c296
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84801152"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624351"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>行動分析と異常検出を瞬時に取得する
 
@@ -115,7 +115,12 @@ Cloud App Security のネイティブ アラートに加えて、Azure Active Di
 
 ### <a name="suspicious-email-deletion-activity-preview"></a>疑わしいメール削除アクティビティ (プレビュー)
 
-* このポリシーを使用すると、環境のプロファイリングが行われ、ユーザーが 1 回のセッション中に疑わしいメール削除アクティビティを実行した場合にアラートがトリガーされます。 このポリシーでは、メールを使ったコマンド アンド コントロール通信 (C&C/C2) などの潜在的な攻撃ベクトルによってユーザーのメールボックスが侵害された可能性があることが示される場合があります。
+* このポリシーを使用すると、環境のプロファイリングが行われ、ユーザーが 1 回のセッション中に疑わしいメール削除アクティビティを実行した場合にアラートがトリガーされます。 このポリシーでは、メールを使ったコマンド アンド コントロール通信 (C&C または C2) などの潜在的な攻撃ベクトルによってユーザーのメールボックスが侵害された可能性があることが示される場合があります。
+
+> [!NOTE]
+> Cloud App Security には、Office Advanced Threat Protection (Office ATP) が統合されており、URL デトネーション、マルウェア対策など、Exchange Online 用の保護を提供します。 Office ATP を有効にすると、Cloud App Security アクティビティ ログにアラートが表示されるようになります。
+
+<!-- // MATP? Delay tile start appearing? -->
 
 ### <a name="unusual-activities-by-user"></a>異常なアクティビティ (ユーザーによるもの)
 

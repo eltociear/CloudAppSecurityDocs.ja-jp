@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b86f8ef6eef534301b21371021295587c6535786
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: f69522921f3bd9996e8a0146cdf6ea224691e1f8
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81230044"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623274"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Okta を Microsoft Cloud App Security に接続する
 
@@ -59,7 +59,7 @@ ms.locfileid: "81230044"
 
     ![Okta の接続](media/connect-okta.png "Okta の接続")
 
-1. 表示されたポップアップで、 **[ドメイン]** フィールドに Okta ドメインを入力し、 **[トークン]** フィールドにトークンを貼り付けます。
+1. ポップアップで、 **[ドメイン]** フィールドに Okta ドメインを入力し、 **[トークン]** フィールドにトークンを貼り付けます。
 
 1. **[接続]** をクリックして、Cloud App Security に Okta のトークンを作成します。
 

@@ -1,5 +1,5 @@
 ---
-title: ポリシーを作成してクラウド アプリの使用を制御する - Cloud App Security | Microsoft Docs
+title: ポリシーを作成してクラウド アプリの使用を制御する - Cloud App Security
 description: この記事では、クラウド アプリの使用を制御するためにポリシーを使用および設定する方法について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e4675430b45e92579cd4c692247c5a481bad233e
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: f38cf010aeaf2031a5e77d7c454b43458a084334
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285616"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623256"
 ---
 # <a name="control-cloud-apps-with-policies"></a>ポリシーによるクラウド アプリの制御
 

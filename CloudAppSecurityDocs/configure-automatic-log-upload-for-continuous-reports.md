@@ -1,5 +1,5 @@
 ---
-title: 継続的なレポートのために自動ログ アップロードを構成する - Cloud App Security | Microsoft Docs
+title: 継続的レポートのために自動ログ アップロードを構成する - Cloud App Security
 description: この記事では、Cloud Discovery の自動レポートを作成するためにログをアップロードする方法について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b718641a17860bf3edb8ffc5f78c07b805b38bab
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: ebbe2f53f184cf8668a9cf3443ade3dedb42733f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720089"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623352"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>仮想アプライアンスでの継続的なレポートのために自動ログ アップロードを構成する - 非推奨
 
@@ -47,7 +47,7 @@ ms.locfileid: "74720089"
 
 ## <a name="set-up-and-configuration"></a>セットアップと構成
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 - Web ポータルの構成: データ ソースを定義してログ コレクターにリンクする
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>手順 1 – Web ポータルの構成: データ ソースを定義してログ コレクターにリンクする
 
 1. 自動アップロードの設定ページに移動します。Cloud App Security ポータルで、設定アイコン ![設定アイコン](media/settings-icon.png "設定アイコン") をクリックしてから **[ログ コレクター]** をクリックします。
 

@@ -1,5 +1,5 @@
 ---
-title: 電子メール通知の基本設定を設定する - Cloud App Security |Microsoft Docs
+title: 電子メール通知の基本設定を設定する - Cloud App Security
 description: この記事では、Cloud App Security から送信される電子メール通知をカスタマイズする方法について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e362314a62399c15e662e20d13ea660015666b3d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 77bf7eeadf64108ca62a12d485aadba21e8d8848
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719889"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624612"
 ---
 # <a name="email-notification-preferences"></a>電子メール通知の基本設定
 

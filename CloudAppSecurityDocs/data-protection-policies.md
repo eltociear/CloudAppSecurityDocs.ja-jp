@@ -1,5 +1,5 @@
 ---
-title: クラウド アプリでファイルを監視および保護する - Cloud App Security | Microsoft Docs
+title: クラウド アプリでファイルを監視および保護する - Cloud App Security
 description: この記事では、組織のクラウド アプリで使用されるデータとファイルを監視および制御するためのデータ ポリシーを設定する手順について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 345f3bea6e204598a3ce4af7c06d7c1540fec032
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 317595b377d19b1d6f9a06b316cb14e4d1ad4c1c
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241467"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624589"
 ---
 # <a name="file-policies"></a>ファイル ポリシー
 
@@ -88,7 +88,7 @@ Cloud App Security の組み込み DLP エンジンは、Office、Open Office、
 
     コンテンツ違反の一致が一定の回数発生してからファイルを違反と見なす場合の一致の最小数を設定できます。 たとえば、コンテンツに 10 個以上のクレジット カード番号が含まれているファイルが検出された場合にアラートを発行するには、10 を選択できます。
 
-    選択した式に対してコンテンツが一致すると、違反テキストが "X" という文字に置き換えられます。 既定では、違反はマスクされ、違反の前後の 100 文字のコンテキストが表示されます。 式のコンテキスト内の数値は "#" という文字に置き換えられ、Cloud App Security 内には格納されません。 **[Unmask the last four characters of a violation]** \(違反の最後の 4 文字のマスクを解除\) オプションを選択すると、違反の最後の 4 文字をマスク解除できます。 正規表現で検索するデータ型 (コンテンツ、メタデータ、ファイル名) を設定する必要があります。 既定では、コンテンツとメタデータが検索されます。
+    選択した式に対してコンテンツが一致すると、違反テキストが "X" という文字に置き換えられます。 既定では、違反はマスクされ、違反の前後の 100 文字のコンテキストが表示されます。 式のコンテキスト内の数値は "#" という文字に置き換えられ、Cloud App Security 内には格納されません。 **[違反の最後の 4 文字のマスクを解除する]** オプションを選択すると、違反の最後の 4 文字をマスク解除できます。 正規表現で検索するデータ型 (コンテンツ、メタデータ、ファイル名) を設定する必要があります。 既定では、コンテンツとメタデータが検索されます。
 
 1. Cloud App Security で一致が検出された場合に実行する **[ガバナンス]** アクションを選択します。
 

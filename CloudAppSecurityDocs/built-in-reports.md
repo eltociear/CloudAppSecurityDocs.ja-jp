@@ -1,5 +1,5 @@
 ---
-title: レポートの生成 - Microsoft Cloud App Security | Microsoft Docs
+title: レポートの生成 - Microsoft Cloud App Security
 description: この記事では、Microsoft Cloud App Security でデータ管理レポートを生成する手順について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3d87522306932229b9defd05e760672e875a28ab
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 88cf54f981ef02b76cd3286f3171e98f5f33752b
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720164"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624330"
 ---
 # <a name="generate-data-management-reports"></a>データ管理レポートの生成
 

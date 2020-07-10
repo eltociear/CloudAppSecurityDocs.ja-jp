@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/02/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,16 @@ ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3941ea5141049f23ed8a187df5c29192883203c8
-ms.sourcegitcommit: 0e8065703810347c86567d636293bf6d41df1a84
+ms.openlocfilehash: f39ede3da1483acb4fd47c0708e3c244ff458aa5
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85256111"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623342"
 ---
-# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security-preview"></a>GitHub Enterprise Cloud を Microsoft Cloud App Security に接続する (プレビュー)
+# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>GitHub Enterprise Cloud を Microsoft Cloud App Security に接続する
 
 *適用対象:Microsoft Cloud App Security*
-
-GitHub Enterprise Cloud API コネクタは、現在プライベート プレビュー段階であり、段階的にロールアウトされています。このプレビュー バージョンは、サービス レベル アグリーメントなしで提供されており、運用環境のワークロードにはお勧めできません。 特定の機能がサポートされていないか、機能が制限されている可能性があります。 詳細については、「[Microsoft Azure プレビューの追加利用規約](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)」を参照してください。
 
 この記事では、既存の GitHub Enterprise Cloud 組織を、App Connector API を使用して Microsoft Cloud App Security に接続する方法を説明します。 この接続により、組織の GitHub Enterprise Cloud の使用を可視化し、制御することができます。 Cloud App Security によって GitHub Enterprise Cloud が保護される方法の詳細については、[GitHub Enterprise の保護](protect-github.md)に関するページを参照してください。
 

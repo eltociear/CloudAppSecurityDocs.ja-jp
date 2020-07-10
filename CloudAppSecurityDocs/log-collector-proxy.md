@@ -1,5 +1,5 @@
 ---
-title: プロキシの背後にあるログ コレクターを有効にする - Cloud App Security | Microsoft Docs
+title: プロキシの背後にあるログ コレクターを有効にする - Cloud App Security
 description: この記事では、プロキシの背後から Cloud App Security の Cloud Discovery ログ コレクターを有効にする方法について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2b6d888c90a3e21ee98002372c16484f6a471610
-ms.sourcegitcommit: d340917143d37ded0dd342a277a1b6ad267f9a7a
+ms.openlocfilehash: 2b62a1344f4277f58ebff09dded12497238705bf
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77618450"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624668"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>プロキシの背後にあるログ コレクターを有効にする
 

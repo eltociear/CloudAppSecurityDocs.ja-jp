@@ -1,5 +1,5 @@
 ---
-title: アプリの構成を証明する - Cloud App Security | Microsoft Docs
+title: アプリを証明する - Cloud App Security
 description: この記事では、Cloud App Security でアプリの構成を証明する手順について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 377a289b15d255db7a310eb7f49e42eb1e7af55f
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 55bbd68f012dbfd8053154e8f3e44c1af8cce9ae
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83854214"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624348"
 ---
 # <a name="attest-your-app"></a>アプリを証明する
 

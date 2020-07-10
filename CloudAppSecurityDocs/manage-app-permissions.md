@@ -1,5 +1,5 @@
 ---
-title: アクセス許可を取得するサードパーティのクラウド OAuth アプリを制御する - Cloud App Security | Microsoft Docs
+title: アクセス許可を取得するサード パーティのクラウド OAuth アプリを制御する - Cloud App Security
 description: この記事では、サードパーティの OAuth アプリを制御、禁止、許可する方法について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 62968b15a69ec67a828c3512fe9718b2a48cc25e
-ms.sourcegitcommit: 9538de5f3034a65626710648d22e2e186d77041a
+ms.openlocfilehash: 084491b7c74019d2145439f66ce5a90482091ed9
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507170"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624643"
 ---
 # <a name="manage-oauth-apps"></a>OAuth アプリの管理
 
@@ -107,7 +107,7 @@ Cloud App Security では、実行されたアクティビティの包括的な�
 
 1. **[OAuth アプリ]** ページの関連するアプリが表示されている行の **[承認者]** で、アプリを承認したユーザー数が表示されたリンクをクリックします。
 
-1. ポップアップ ウィンドウで、 **[エクスポート]** をクリックします。
+1. ポップアップで **[エクスポート]** をクリックします。
 
     ![OAuth アプリの監査のエクスポートが表示されたスクリーンショット](media/oauth-export-users.png)
 

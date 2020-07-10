@@ -1,5 +1,5 @@
 ---
-title: Cloud Discovery データを使用して危険な動作を検出する - Cloud App Security | Microsoft Docs
+title: Cloud Discovery データを使用して危険な動作を検出する - Cloud App Security
 description: このトピックでは、アプリのリスク スコアの操作など、Cloud Discovery データを操作する方法について説明します。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6e58d3a621f6384fcc011aeb293e01472ee082cc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 05af62c1754484572ff36510aedca113cdae8d5e
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721167"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624713"
 ---
 # <a name="working-with-discovery-data"></a>探索データの操作
 

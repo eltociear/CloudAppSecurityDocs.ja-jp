@@ -1,11 +1,11 @@
 ---
-title: Cloud Discovery アプリのポリシーの作成 - Cloud App Security | Microsoft Docs
+title: Cloud Discovery アプリのポリシーの作成 - Cloud App Security
 description: この記事では Cloud Discovery ポリシーの使用に関する情報を提供します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 72df9c27cd27fea1f35a67eb7ca3ab56209c6992
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 4434bd5faf1ab8aa30391d3434df71e6db557096
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477528"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623316"
 ---
 # <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
 
@@ -59,12 +59,14 @@ ms.locfileid: "81477528"
 
 9. **[作成]** をクリックします。
 
+> [!NOTE]
+> 新しく作成された検出ポリシー (または継続的レポートが更新されたポリシー) により、同じアプリに対する既存のアラートがあるかどうかにかかわらず、90 日に 1 回、継続的レポートごとにアラートがトリガーされます。 そのため、たとえば新しい人気のあるアプリを検出するためのポリシーを作成した場合、既に検出されアラートが生成されているアプリに対して追加のアラートがトリガーされることがあります。
+
 たとえば、クラウド環境にある危険なホスティング アプリの検出に関心がある場合は、次のようにポリシーを設定します。
 
 **ホスティング サービス** カテゴリにあり、非常に危険であることを示す 1 のリスク スコアを持つサービスを検出するためのポリシー フィルターを設定します。
 
- 下部で、特定の検出されたアプリのアラートをトリガーするしきい値を設定します。 たとえば、環境内の 100 を超えるユーザーがアプリを使用して、それらのユーザーがサービスから特定の量のデータをダウンロードした場合にのみ、アラートします。
-また、受信する毎日のアラートの制限を設定することもできます。
+下部で、特定の検出されたアプリのアラートをトリガーするしきい値を設定します。 たとえば、環境内の 100 を超えるユーザーがアプリを使用して、それらのユーザーがサービスから特定の量のデータをダウンロードした場合にのみ、アラートします。 また、受信する毎日のアラートの制限を設定することもできます。
 
 ![アプリ検出ポリシーの例](media/app-discovery-policy-example.png "アプリ検出ポリシーの例")
 

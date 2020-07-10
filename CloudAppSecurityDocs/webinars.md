@@ -1,5 +1,5 @@
 ---
-title: ウェビナーを見る - Cloud App Security | Microsoft Docs
+title: ウェビナーを見る - Cloud App Security
 description: 説明も含めて、過去のウェビナーの一覧を示します。
 author: shsagir
 ms.author: shsagir
@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/25/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9fc28a4e51c816523cb6268e84004c176ce2839a
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 95df4dafcb38ce7b4fa041c7fc0e5ea6e600c6e1
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720335"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624727"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Microsoft Cloud App Security に関するウェビナー
 

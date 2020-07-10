@@ -1,5 +1,5 @@
 ---
-title: 電子書籍を読む - Cloud App Security | Microsoft Docs
+title: 電子書籍を読む - Cloud App Security
 description: 電子書籍の一覧とその説明を示します。
 author: shsagir
 ms.author: shsagir
@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/22/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 91a262f81dbcb49c81df869c869cd81d2ada9766
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 46ba4c9952b1a25912c8071e0fad34e1160ea6f8
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719986"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624528"
 ---
 # <a name="microsoft-cloud-app-security-e-books"></a>Microsoft Cloud App Security の電子書籍
 

@@ -1,5 +1,5 @@
 ---
-title: クラウド アプリのアクティビティの表示 - Cloud App Security | Microsoft Docs
+title: クラウド アプリのアクティビティの可視化 - Cloud App Security
 description: この記事では、アクティビティ ポリシーに適用できるアクティビティ、フィルター、一致パラメーターの一覧を挙げます。
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 33837f543282dbc7d40dc7c1961e687b4334794e
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: 986b80a09e86da636fab68b90dd46287528ebec0
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285296"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624456"
 ---
 # <a name="activities"></a>アクティビティ
 

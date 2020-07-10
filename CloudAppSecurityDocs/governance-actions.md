@@ -1,11 +1,11 @@
 ---
-title: 接続アプリを制御するためのガバナンス アクション - Cloud App Security | Microsoft Docs
+title: 接続アプリを制御するためのガバナンス アクション - Cloud App Security
 description: この記事では、Cloud App Security で実行できるすべてのガバナンス アクションと、それらを追跡するログ メッセージを示して説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/03/2019
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 628e34d5ac13af3d99e2b92d33b3e7c3f8d63aec
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 14ef18bb57d979dc5ddabc3ef8a7ff0c724ff619
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662303"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624558"
 ---
 # <a name="governing-connected-apps"></a>接続されているアプリを管理する
 
@@ -132,10 +132,10 @@ ms.locfileid: "81662303"
 |[アクティビティ ポリシー]、[アカウント] | アカウント |ユーザーにもう一度サインインするよう要求する|ユーザーによってアプリケーションへのすべての更新トークンとセッション Cookie の問題を取り消します。 このアクションにより、組織のすべてのデータへのアクセスが妨げられ、ユーザーにすべてのアプリケーションへ再度サインインを強制します。| G Suite、Office|
 |[アクティビティ ポリシー]、[アカウント] | アカウント |ユーザーに対するセキュリティ侵害を確認|ユーザーのリスク レベルを高に設定します。 これにより、Azure AD に定義された関連のポリシー アクションが適用されます。 | Office |
 |[アクティビティ ポリシー]、[アカウント] | アカウント | 管理特権の取り消し |管理者アカウントの特権を取り消します。 たとえば、ログイン試行が 10 回失敗した後に、管理特権を取り消すアクティビティ ポリシーを設定します。 | G Suite|
-|[アプリ ダッシュボード] > [アプリの権限] |アクセス許可|アプリの禁止解除| Google、Salesforce の場合: アプリに対する禁止を解除し、Google または Salesforce へのアクセス許可をユーザーがサードパーティ製アプリに付与できるようにします。 Office 365 の場合: サードパーティ製アプリの Office へのアクセス許可を復元します。 |G Suite、Salesforce、Office |
+|[アプリ ダッシュボード] > [アプリの権限] |アクセス許可|アプリの禁止解除| Google、Salesforce の場合: アプリに対する禁止を解除し、Google または Salesforce へのアクセス許可をユーザーがサードパーティ製アプリに付与できるようにします。 Office 365 の場合: サード パーティ製アプリの Office へのアクセス許可を復元します。 |G Suite、Salesforce、Office |
 |[アプリ ダッシュボード] > [アプリの権限] |アクセス許可| アプリのアクセス許可の無効化 | Google、Salesforce、Office に対するサードパーティ製アプリのアクセス許可を取り消します。 これは既存のすべてのアクセス許可に対して実行される 1 回限りのアクションですが、以降の接続を禁止することはありません。|G Suite、Salesforce、Office |
 |[アプリ ダッシュボード] > [アプリの権限] |アクセス許可| アプリのアクセス許可の有効化 |Google、Salesforce、Office に対するサードパーティ製アプリのアクセス許可を付与します。 これは既存のすべてのアクセス許可に対して実行される 1 回限りのアクションですが、以降の接続を禁止することはありません。|G Suite、Salesforce、Office |
-|[アプリ ダッシュボード] > [アプリの権限] |アクセス許可| アプリの禁止 | Google、Salesforce の場合: Google または Salesforce に対するサードパーティ製アプリのアクセス許可を取り消し、以降のアクセス許可の付与を禁止します。 Office 365 の場合: サードパーティ製アプリによる Office へのアクセスを許可しませんが、アクセス許可を取り消すことはありません。 |G Suite、Salesforce、Office |
+|[アプリ ダッシュボード] > [アプリの権限] |アクセス許可| アプリの禁止 | Google、Salesforce の場合: Google または Salesforce に対するサードパーティ製アプリのアクセス許可を取り消し、以降のアクセス許可の付与を禁止します。 Office 365 の場合: サード パーティ製アプリによる Office へのアクセスを許可しませんが、アクセス許可を取り消すことはありません。 |G Suite、Salesforce、Office |
 |[アプリ ダッシュボード] > [アプリの権限] |アクセス許可|アプリを取り消す|Google と Salesforce に対するサードパーティ製アプリのアクセス許可を取り消します。 これは既存のすべてのアクセス許可に対して実行される 1 回限りのアクションですが、以降の接続を禁止することはありません。 | G Suite、Salesforce|
 |[アプリ ダッシュボード] > [アプリの権限] | アカウント | アプリからのユーザーの取り消し|[ユーザー] の数をクリックすると、特定のユーザーを取り消すことができます。 画面に特定のユーザーが表示され、X を使用して、任意のユーザーのアクセス許可を削除することができます。| G Suite、Salesforce|
 |[検出] > [検出されたアプリ]/[IP アドレス]/[ユーザー]| Cloud Discovery | 探索データのエクスポート | 探索データから CSV を作成します。 | 検出 |
