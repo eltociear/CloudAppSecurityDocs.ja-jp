@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c48fff030c1f008d9361796eafe4ba49b8b0b82
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 4b2d84c2c8f3260cf5e6048bc453a62c29cd95b9
+ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624543"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86122650"
 ---
 # <a name="connect-apps"></a>アプリを接続する
 
@@ -75,8 +75,8 @@ Cloud App Security はシステム管理者権限で展開されているため�
 | **ログオン アクティビティ** | ✔ | ✔ | ✔ | G Suite 接続による | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **ユーザーの利用状況** | 適用できません | ✔ | ✔ | ✔ | ✔ - Google Business または Enterprise が必要です | ✔ | ✔ | 一部サポート | Salesforce Shield でサポート | ✔ | ✔ |
 | **管理者アクティビティ** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | 一部サポート | ✔ | ✔ | プロバイダーはサポートしていません |
-| **DLP - 定期的なスキャン** | | ✔ | 近日中にご利用になれます | 適用できません | ✔ | ✔ | 適用できません | | | | プロバイダーはサポートしていません |
-| **DLP - ほぼリアルタイムのスキャン** | | ✔ | ✔ | 適用できません | ✔ - Google Business または Enterprise が必要です | ✔ | 適用できません | ✔ | ✔ | ✔ | プロバイダーはサポートしていません |
+| **DLP - 定期的なスキャン** | | ✔ | 近日中にご利用になれます | 適用できません | ✔ | ✔ | 適用できません | ✔ | ✔ | ✔ | プロバイダーはサポートしていません |
+| **DLP - ほぼリアルタイムのスキャン** | | ✔ | ✔ | 適用できません | ✔ - Google Business または Enterprise が必要です | ✔ | 適用できません | | | ✔ | プロバイダーはサポートしていません |
 | **コントロールの共有** | ✔ | ✔ | ✔ | 適用できません | ✔ | ✔ | 適用できません | 適用できません | | ✔ | プロバイダーはサポートしていません |
 | **ファイル ガバナンス** | ✔ | ✔ | ✔ | 適用できません | ✔ | ✔ | 適用できません | | ✔ | | プロバイダーはサポートしていません |
 | **アプリのアクセス許可の表示** | 適用できません | プロバイダーはサポートしていません | 対応予定 | 適用できません | ✔ | ✔ | 適用できません | | ✔ | 適用できません | 適用できません |

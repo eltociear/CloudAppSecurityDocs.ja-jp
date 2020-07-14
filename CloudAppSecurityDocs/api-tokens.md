@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fcde5b08363a790cf18cf873c0dfde183ec6ddcd
-ms.sourcegitcommit: 9165220189564860d74a255a5c0be1ed362ba152
+ms.openlocfilehash: b19fdd34425218cbeff284bb16962723e027e914
+ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80522552"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86122627"
 ---
 # <a name="api-tokens"></a>API トークン
 
@@ -58,9 +58,6 @@ API にアクセスするには、API トークンを作成し、それをソフ
     ![Cloud App Security API トークン](media/generate-api-token.png)
 
     汎用ポータル URL も引き続き機能しますが、トークンと共に提供されるカスタム URL よりかなり遅くなります。 URL を忘れた場合は、いつでもメニューの **?** アイコンに移動し、 **[バージョン情報]** を選択して、それを表示できます。
-
-> [!NOTE]
-> Azure Active Directory Privileged Identity Management ロールのアクティブ化を使用している場合は、ロールがアクティブにされた場合にのみ、API トークンが有効になります。 詳細については、「[PIM で Azure AD ロールをアクティブ化する](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role)」を参照してください。
 
 ## <a name="api-token-management"></a>API トークン管理
 

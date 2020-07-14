@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security での API トークン管理
+title: API トークンの管理
 description: この記事では、Cloud App Security 用の API トークンの生成に関する情報について説明します。
 keywords: ''
 author: shsagir
@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 933c2beb8285f4f76f61406ab4981153b81913cc
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: e4dba7ef7ff73c7e4b6b784bce68d4e71b0b854e
+ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505421"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86122624"
 ---
 # <a name="managing-api-tokens"></a>API トークンの管理
 
@@ -46,9 +46,6 @@ Cloud App Security API にアクセスするには、API トークンを作成�
     ![Cloud App Security API トークン](media/generate-api-token.png)
 
     汎用ポータル URL も引き続き機能しますが、トークンと共に提供されるカスタム URL よりかなり遅くなります。 URL を忘れた場合は、いつでもメニューの **?** アイコンに移動し、 **[バージョン情報]** を選択して表示できます。
-
-> [!NOTE]
-> Azure Active Directory Privileged Identity Management ロールのアクティブ化を使用している場合は、ロールがアクティブにされた場合にのみ、API トークンが有効になります。 詳細については、「[PIM で Azure AD ロールをアクティブ化する](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role)」を参照してください。
 
 ## <a name="api-token-management"></a>API トークン管理
 

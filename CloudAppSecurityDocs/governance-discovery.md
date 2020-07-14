@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c0df9e769608b2ca66de5b7a8889bfd648795a9
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: ad9f158a1e81a9aeaf7bb59a23da56e27260a6c5
+ms.sourcegitcommit: a76d7b8837a5ad17348eb1b2e1dcbe0bf8a2d0a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624580"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86282444"
 ---
 # <a name="govern-discovered-apps"></a>検出されたアプリの管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "85624580"
 
 承認または承認されていないアプリの一覧がある場合は、チェックボックスを使用して、管理するアプリを選択し、さらにアクションを選択します。
 
-承認されていないアプリの一覧をクエリするには、[Cloud App Security API を使用してブロック スクリプトを生成](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script)できます。
+承認されていないアプリの一覧をクエリするには、[Cloud App Security API を使用してブロック スクリプトを生成](api-discovery-script.md)できます。
 
 > [!NOTE]
 > テナントで Microsoft Defender Advanced Threat Protection (ATP)、Zscaler NSS、または iboss を使用している場合は、承認されていないとマークしたすべてのアプリが Cloud App Security によって自動的にブロックされ、ブロックするスクリプトの作成に関する以下のセクションは不要になります。 詳細については、[Microsoft Defender ATP との統合](wdatp-integration.md)、[Zscaler との統合](zscaler-integration.md)、[iboss との統合](iboss-integration.md)に関するそれぞれのページをご覧ください。
