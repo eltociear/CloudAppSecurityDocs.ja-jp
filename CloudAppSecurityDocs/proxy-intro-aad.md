@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/27/2020
+ms.date: 07/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ba00548c014126414319fb5860d2c7fab9fb26d
-ms.sourcegitcommit: 9a35b4e96db80ac85a4c0244ef6abd468d5774a9
+ms.openlocfilehash: c957afbd4b4fef2947b042c99b548edfacbcb5c0
+ms.sourcegitcommit: 5ae4c12ee43c9133b61731a95f81f771eeeb7d19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85853978"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86180552"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security のアプリの条件付きアクセス制御を使用してアプリを保護する
 
@@ -106,6 +106,13 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 
 1. **[デバイスの識別]** タブを選択します。
 1. 必要な数のルート証明書または中間証明書をアップロードします。
+
+    > [!TIP]
+    > どのように動作するかをテストするには、次のようにサンプルのルート CA とクライアント証明書を使用することができます。
+    >
+    > 1. サンプルの[ルート CA](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleRootCA.crt.pem) と[クライアント証明書](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleClientCert.pfx)をダウンロードします。
+    > 1. ルート CA を Cloud App Security にアップロードします。
+    > 1. 関連するデバイスにクライアント証明書 (パスワード = Microsoft) をインストールします。
 
 証明書がアップロードされたら、**デバイス タグ**と**有効なクライアント証明書**に基づいて、アクセス ポリシーとセッション ポリシーを作成できます。
 

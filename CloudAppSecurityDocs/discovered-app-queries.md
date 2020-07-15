@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10faf7a844c64efb621e6b8e1cf14b79443b322d
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: ff18286f75a3f5a306f7ac1c08ecff3ad98a01a5
+ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241484"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046064"
 ---
 # <a name="discovered-app-filters-and-queries"></a>検出されたアプリのフィルターとクエリ
 
@@ -45,8 +45,7 @@ ms.locfileid: "81241484"
 
 ### <a name="creating-and-managing-custom-app-tags"></a>カスタム アプリ タグの作成と管理
 
-カスタム アプリ タグを作成することができます。
-これらのタグは、調査する特定の種類のアプリをより詳しく調べるためのフィルターとして使うことができます。 たとえば、カスタム ウォッチ リスト、特定の事業単位への割り当て、“法務により承認済み” のようなカスタム承認などです。
+カスタム アプリ タグを作成することができます。 これらのタグは、調査する特定の種類のアプリをより詳しく調べるためのフィルターとして使うことができます。 たとえば、カスタム ウォッチ リスト、特定の事業単位への割り当て、“法務により承認済み” のようなカスタム承認などです。 アプリ タグは、フィルターのアプリ検出ポリシーで使用することも、ポリシー ガバナンス アクションの一部としてアプリにタグを適用して使用することもできます。
 
 カスタム アプリ タグを作成するには
 
@@ -94,7 +93,7 @@ Cloud App Security には、**クエリ候補**機能と、頻繁に使用する
 
 - **[暗号化が脆弱なエンタープライズ クラウド アプリ]** - すべての検出されたアプリのうち、保存時データを暗号化せず、どの暗号化プロトコルもサポートしていないため危険なアプリのみを表示します。
 
-- **[GDPR ready cloud apps]\(GDPR 対応クラウド アプリ\)** - すべての検出されたアプリのうち、GDPR に対応したアプリのみを表示します。 GDPR への準拠は最優先事項であるため、このクエリを使用すると、GDPR 対応のアプリを簡単に識別し、対応していないアプリのリスクを評価することで、脅威を軽減できます。
+- **[GDPR ready cloud apps]\(GDPR 対応クラウド アプリ\)** - すべての検出されたアプリのうち、GDPR に対応したアプリのみを表示します。 GDPR へのコンプライアンスは最優先事項であるため、このクエリを使用すると、GDPR 対応のアプリを簡単に識別し、対応していないアプリのリスクを評価することで、脅威を軽減できます。
 
 ![検出されたアプリのクエリ](media/queries-discovered-apps.png)
 

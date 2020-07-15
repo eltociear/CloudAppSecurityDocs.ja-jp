@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 546912761fb854adecc9d7626465b694f02b20b7
-ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
+ms.openlocfilehash: 9b2b4cfc8c3807f5acd7540390a3b44604e49d84
+ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82161811"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137976"
 ---
 # <a name="generic-siem-integration"></a>汎用 SIEM の統合
 
@@ -116,7 +116,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 各変数の使用方法:
 
 * DIRNAME は、ローカル エージェント デバッグ ログで使用するディレクトリのパスです。
-* ADDRESS[:PORT] は、サーバーが *nternet に接続する際に使用するプロキシ サーバーのアドレスとポートです。
+* ADDRESS[:PORT] は、サーバーがインターネットに接続する際に使用するプロキシ サーバーのアドレスとポートです。
 * TOKEN は、前の手順でコピーした SIEM エージェント トークンです。
 
 「-h」と入力すれば、いつでもヘルプを表示できます。

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 07482404f8c3c374f8ebe8182512add5db64345b
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: ce16a1cf2ff783a128b6ff2a93f86966388d1de3
+ms.sourcegitcommit: a76d7b8837a5ad17348eb1b2e1dcbe0bf8a2d0a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719251"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86282443"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Cloud App Security の基本的なセットアップ
 
@@ -51,7 +51,7 @@ US Government GCC High のお客様の場合は、次の IP アドレスもフ�
 
 1. また、システムから送信されるメール通知や Web ページに表示される **[ロゴ]** を指定することもできます。 ロゴは、背景が透明で最大サイズが 150 x 50 ピクセルの png ファイルにする必要があります。
 
-1. **[マネージド ドメイン]** のリストを追加したことを確認します。 マネージド ドメインの追加は、非常に重要なステップです。 Cloud App Security では、マネージド ドメインを使用して、内部ユーザーと外部ユーザー、およびファイルを共有する必要がある場所と共有してはならない場所が決定されます。 この情報は、レポートとアラートに使用されます。
+1. 内部ユーザーを識別するため、 **[マネージド ドメイン]** のリストを追加したことを確認します。 マネージド ドメインの追加は、非常に重要なステップです。 Cloud App Security では、マネージド ドメインを使用して、内部ユーザーと外部ユーザー、およびファイルを共有する必要がある場所と共有してはならない場所が決定されます。 この情報は、レポートとアラートに使用されます。
 
     * 内部として構成されていないドメイン内のユーザーは、外部としてマークされます。 外部ユーザーは、アクティビティまたはファイルのスキャンの対象になりません。
 

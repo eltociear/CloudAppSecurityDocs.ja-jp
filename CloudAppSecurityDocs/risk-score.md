@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d3d292f7bedfdfd9d4569bb357b5c0dcaf48c69f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 074ff2ae9e23cdcb351a34f937103e311441aa7f
+ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625096"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137965"
 ---
 # <a name="working-with-app-risk-scores"></a>アプリのリスク スコアの操作
 

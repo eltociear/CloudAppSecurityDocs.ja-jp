@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 2a9ef4658cb363e98397341faffc69d6c961808f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 6145c6dade8729c3572f9c491ad9743899b3b92e
+ms.sourcegitcommit: 5f3b3f11bfb6f677b8666a4566e7abbb873567d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624934"
+ms.lasthandoff: 07/12/2020
+ms.locfileid: "86279981"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>チュートリアル:ネットワーク内のシャドウ IT の検出と管理
 
@@ -79,7 +79,7 @@ IT 管理者に、従業員が使用していると考えられるクラウド �
 
     * 検出されたアプリの使用を調査する場合は、さらに詳しく調べます。 サブドメインとリソースを表示して、クラウド サービス内の特定のアクティビティ、データ アクセス、リソースの使用状況について確認します。 詳細については、「[検出されたアプリの詳細情報](discovered-apps.md#deep-dive-into-discovered-apps)」と「[リソースとカスタム アプリを検出する](discovered-apps.md#discover-resources-and-custom-apps)」をご覧ください。
 
-1. **代替アプリの特定**:クラウド アプリ カタログを使用して同じアプリ カテゴリに属するアプリをフィルター処理したり、高度なフィルターを使用して、組織のポリシーに準拠するために必要なさまざまなセキュリティ コントロールに準拠するソリューションを特定したりできます。
+1. **代替アプリの特定**:クラウド アプリ カタログを使用して、検出されたリスクの高いアプリと同様のビジネス機能を実現しつつ組織のポリシーにも準拠する、より安全なアプリを識別します。 これを行うには、高度なフィルターを使用して、さまざまなセキュリティ コントロールに対応する同じカテゴリのアプリを検索します。
 
 ### <a name="phase-3-manage-your-apps"></a>フェーズ 3:アプリを管理する
 
