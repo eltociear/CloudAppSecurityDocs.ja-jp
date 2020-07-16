@@ -372,6 +372,8 @@
           href: troubleshooting-siem.md
         - name: ポリシーのトラブルシューティング
           href: troubleshoot-policies.md
+        - name: アクセスおよびセッション制御のトラブルシューティング
+          href: troubleshooting-proxy.md
         - name: トラブルシューティング - cas.ms とは何ですか?
           href: troubleshooting-proxy-url.md
 - name: リソース
