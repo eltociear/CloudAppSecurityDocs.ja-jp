@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 047f922f7040e06d740d8d75e37dd54774b5acb7
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 0aff022a162dc099b5a6402570a832de1afcb074
+ms.sourcegitcommit: c37923e69f52ee0e755cca16b4ce88cbc5b01c0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624951"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86473507"
 ---
 # <a name="network-requirements"></a>ネットワークの要件
 
@@ -44,6 +44,7 @@ ms.locfileid: "85624951"
 
 Cloud App Security ポータルへのアクセスのために、お使いのファイアウォールの許可リストに、以下の IP アドレスと DNS 名に対する**送信ポート 443** を追加します。
 
+```ini
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
     cdn.cloudappsecurity.com
@@ -56,12 +57,15 @@ Cloud App Security ポータルへのアクセスのために、お使いのフ�
     static2.sharepointonline.com
     dc.services.visualstudio.com
     *.blob.core.windows.net
+```
 
 US Government GCC High のお客様の場合は、次の DNS 名もファイアウォールの許可リストに追加して、Cloud App Security GCC High ポータルにアクセスできるようにする必要があります。
 
+```ini
     portal.cloudappsecurity.us
     *.portal.cloudappsecurity.us
     cdn.cloudappsecurity.com
+```
 
 また、使用するデータ センターに応じて、次の項目をホワイトリストに登録する必要があります。
 
@@ -85,10 +89,12 @@ US Government GCC High のお客様の場合は、次の DNS 名もファイア�
 
 商用のお客様の場合は、Cloud App Security のリバース プロキシを有効にするために、お使いのファイアウォールの許可リストに、以下の IP アドレスと DNS 名に対する**送信ポート 443** を追加します。
 
+```ini
     *.cas.ms
     *.mcas.ms
     *.admin-mcas.ms
     mcasproxy.azureedge.net
+```
 
 また、使用するデータ センターに応じて、次の項目をホワイトリストに登録する必要があります。
 
@@ -104,9 +110,11 @@ US Government GCC High のお客様の場合は、次の DNS 名もファイア�
 
 US Government GCC High のお客様の場合は、Cloud App Security のリバース プロキシを有効にするために、お使いのファイアウォールの許可リストに、以下の DNS 名に対する**送信ポート 443** を追加します。
 
+```ini
     *.mcas-gov.us
     *.admin-mcas-gov.us
     mcasproxy.azureedge.net
+```
 
 ## <a name="siem-agent-connection"></a>SIEM エージェント接続
 
@@ -202,9 +210,9 @@ MailChimp を使用するには、次の IP アドレスをスパム対策の許
 
 > [!NOTE]
 >
-> - ファイアウォールで静的 IP アドレスのアクセス リストが要求されていて、URL に基づくホワイトリスト登録がサポートされていない場合は、ログ コレクターがポート 443 で [Microsoft Azure データセンターの IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653)への送信トラフィックを開始できるようにします。
->- ログ コレクターが、Cloud App Security ポータルへの送信トラフィックを開始できるようにします。
->- ログ コレクターを設定するときにプロキシを指定しなかった場合は、ポート 80 での http://ocsp.msocsp.com/ と ocsp.digicert.com への HTTP 接続を許可する必要があります。 これは、Cloud App Security ポータルに接続するときに証明書の失効状態を確認するために使用されます。
+> - ファイアウォールで静的 IP アドレスのアクセス リストが要求されていて、URL に基づくホワイトリスト登録がサポートされていない場合は、ログ コレクターがポート 443 で [Microsoft Azure データセンターの IP 範囲](https://www.microsoft.com/download/details.aspx?id=56519)への送信トラフィックを開始できるようにします。
+> - ログ コレクターが、Cloud App Security ポータルへの送信トラフィックを開始できるようにします。
+> - ログ コレクターを設定するときにプロキシを指定しなかった場合は、ポート 80 での http://ocsp.msocsp.com/ と ocsp.digicert.com への HTTP 接続を許可する必要があります。 これは、Cloud App Security ポータルに接続するときに証明書の失効状態を確認するために使用されます。
 
 ## <a name="next-steps"></a>次のステップ
 
